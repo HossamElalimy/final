@@ -1,0 +1,2541 @@
+[{
+  "_id": {
+    "$oid": "6836ec28c1a01b216ecd2e4e"
+  },
+  "walletID": "TWT01",
+  "amount": 20,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T10:57:44.167Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836ed349bc9d5ecfdb3de75"
+  },
+  "walletID": "TWT01",
+  "amount": 20,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T11:02:12.189Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836ed399bc9d5ecfdb3de7a"
+  },
+  "walletID": "TWT01",
+  "amount": 20,
+  "action": "deduct",
+  "timestamp": {
+    "$date": "2025-05-28T11:02:17.116Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836ed409bc9d5ecfdb3de7f"
+  },
+  "walletID": "TWT01",
+  "amount": 20,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T11:02:24.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836ee2d9bc9d5ecfdb3de96"
+  },
+  "walletID": "TWT01",
+  "amount": 20,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T11:06:21.785Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836eea99bc9d5ecfdb3de9f"
+  },
+  "walletID": "TWT01",
+  "amount": 40,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T11:08:25.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836eeaf9bc9d5ecfdb3dea5"
+  },
+  "walletID": "TWT01",
+  "amount": 50,
+  "action": "deduct",
+  "timestamp": {
+    "$date": "2025-05-28T11:08:31.346Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836eec89bc9d5ecfdb3deab"
+  },
+  "walletID": "TWT01",
+  "amount": 50,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T11:08:56.061Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6836eefd9bc9d5ecfdb3deb3"
+  },
+  "walletID": "SCWSC01",
+  "amount": 405,
+  "action": "deduct",
+  "timestamp": {
+    "$date": "2025-05-28T11:09:49.133Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683752546ef9edd2d234eadc"
+  },
+  "walletID": "TWT01",
+  "amount": 50,
+  "action": "add",
+  "timestamp": {
+    "$date": "2025-05-28T18:13:40.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837525b6ef9edd2d234eae2"
+  },
+  "walletID": "TWT01",
+  "amount": 50,
+  "action": "deduct",
+  "timestamp": {
+    "$date": "2025-05-28T18:13:47.496Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384c553e6642bee2439a04"
+  },
+  "transactionId": "TX001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SW01",
+  "timestamp": {
+    "$date": "2025-05-29T12:00:21.471Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T12:00:21.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T12:00:21.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384d4fab1a798df2ea7010"
+  },
+  "transactionId": "TX001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SW01",
+  "timestamp": {
+    "$date": "2025-05-29T12:04:31.773Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T12:04:31.776Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T12:04:31.776Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683869da6569cb5cafae1b40"
+  },
+  "transactionId": "TX1748527578671",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [],
+  "amount": 50,
+  "action": "add",
+  "walletID": "SWS01",
+  "balanceAfter": 400,
+  "timestamp": {
+    "$date": "2025-05-29T14:06:18.671Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:06:18.673Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:06:18.673Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683869e16569cb5cafae1b46"
+  },
+  "transactionId": "TX1748527585263",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [],
+  "amount": 60,
+  "action": "deduct",
+  "walletID": "SWS01",
+  "balanceAfter": 340,
+  "timestamp": {
+    "$date": "2025-05-29T14:06:25.263Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:06:25.263Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:06:25.263Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683869e46569cb5cafae1b4c"
+  },
+  "transactionId": "TX1748527588637",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [],
+  "amount": 70,
+  "action": "add",
+  "walletID": "SWS01",
+  "balanceAfter": 410,
+  "timestamp": {
+    "$date": "2025-05-29T14:06:28.637Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:06:28.638Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:06:28.638Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683869f26569cb5cafae1b5c"
+  },
+  "transactionId": "TX1748527602735",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [],
+  "amount": 90,
+  "action": "add",
+  "walletID": "SWS01",
+  "balanceAfter": 500,
+  "timestamp": {
+    "$date": "2025-05-29T14:06:42.735Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:06:42.736Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:06:42.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68386d7955d1eb962aea7902"
+  },
+  "transactionId": "TX1748528505049",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "SWS01",
+  "balanceAfter": 540,
+  "timestamp": {
+    "$date": "2025-05-29T14:21:45.049Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:21:45.052Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:21:45.052Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68386d7f55d1eb962aea7908"
+  },
+  "transactionId": "TX1748528511443",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "SWS01",
+  "balanceAfter": 550,
+  "timestamp": {
+    "$date": "2025-05-29T14:21:51.443Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:21:51.444Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:21:51.444Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68386d8255d1eb962aea790e"
+  },
+  "transactionId": "TX1748528514529",
+  "userId": "67fe8e03aea4c1351ed3a79a",
+  "items": [],
+  "amount": 40,
+  "action": "deduct",
+  "walletID": "SWS01",
+  "balanceAfter": 510,
+  "timestamp": {
+    "$date": "2025-05-29T14:21:54.529Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:21:54.529Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:21:54.529Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68386da055d1eb962aea7926"
+  },
+  "transactionId": "TX1748528544779",
+  "userId": "68209da66137550d44ac5c27",
+  "items": [],
+  "amount": 40,
+  "action": "add",
+  "walletID": "MWM01",
+  "balanceAfter": 40,
+  "timestamp": {
+    "$date": "2025-05-29T14:22:24.779Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T14:22:24.780Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T14:22:24.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838cf90c71eca5e5725afea"
+  },
+  "transactionId": "TX1748553616442",
+  "userId": "67ff68add57084e1345560f3",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "TWT01",
+  "balanceAfter": 110,
+  "timestamp": {
+    "$date": "2025-05-29T21:20:16.442Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T21:20:16.444Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T21:20:16.444Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838d7569d8ff731d3a4821f"
+  },
+  "transactionId": "TX1748555606102",
+  "userId": "6835fafc0ab3e4ce7e72c976",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 10,
+  "timestamp": {
+    "$date": "2025-05-29T21:53:26.102Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T21:53:26.103Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T21:53:26.103Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838d935e278223f8e9fe819"
+  },
+  "transactionId": "TX1748556085919",
+  "userId": "67f05e7dafae221b88ff707a",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "AWundefined",
+  "balanceAfter": 10,
+  "timestamp": {
+    "$date": "2025-05-29T22:01:25.919Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T22:01:25.921Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T22:01:25.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b485156dbf317057fc87b"
+  },
+  "transactionId": "TX1748715601457",
+  "userId": "67f05e7dafae221b88ff707a",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "AWundefined",
+  "balanceAfter": 40,
+  "timestamp": {
+    "$date": "2025-05-31T18:20:01.457Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:20:01.459Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:20:01.459Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b487a56dbf317057fc9ab"
+  },
+  "transactionId": "TX1748715642958",
+  "userId": "67f05e7dafae221b88ff707a",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "AWundefined",
+  "balanceAfter": 50,
+  "timestamp": {
+    "$date": "2025-05-31T18:20:42.958Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:20:42.959Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:20:42.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4a65b56b696cff496c51"
+  },
+  "transactionId": "TX1748716133322",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 40,
+  "timestamp": {
+    "$date": "2025-05-31T18:28:53.322Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:28:53.324Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:28:53.324Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4a6db56b696cff496cd5"
+  },
+  "transactionId": "TX1748716141037",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 70,
+  "timestamp": {
+    "$date": "2025-05-31T18:29:01.037Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:29:01.037Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:29:01.037Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4a6fb56b696cff496cfe"
+  },
+  "transactionId": "TX1748716143511",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 100,
+  "timestamp": {
+    "$date": "2025-05-31T18:29:03.511Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:29:03.511Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:29:03.511Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4a71b56b696cff496d4c"
+  },
+  "transactionId": "TX1748716145335",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 130,
+  "timestamp": {
+    "$date": "2025-05-31T18:29:05.335Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:29:05.335Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:29:05.335Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4a72b56b696cff496d75"
+  },
+  "transactionId": "TX1748716146290",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 160,
+  "timestamp": {
+    "$date": "2025-05-31T18:29:06.290Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:29:06.291Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:29:06.291Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4aa8b56b696cff497150"
+  },
+  "transactionId": "TX1748716200264",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 190,
+  "timestamp": {
+    "$date": "2025-05-31T18:30:00.264Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:30:00.264Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:30:00.264Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683b4aacb56b696cff49719e"
+  },
+  "transactionId": "TX1748716204692",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 220,
+  "timestamp": {
+    "$date": "2025-05-31T18:30:04.692Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-31T18:30:04.692Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T18:30:04.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68404bab415fce8ce2b28629"
+  },
+  "transactionId": "TX1749044139202",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 250,
+  "timestamp": {
+    "$date": "2025-06-04T13:35:39.202Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-04T13:35:39.204Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T13:35:39.204Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68404bb0415fce8ce2b28679"
+  },
+  "transactionId": "TX1749044144027",
+  "userId": "6658e92f17d7a98a22f00d13",
+  "items": [],
+  "amount": 30,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 280,
+  "timestamp": {
+    "$date": "2025-06-04T13:35:44.027Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-04T13:35:44.028Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T13:35:44.028Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384c553e6642bee2439a06"
+  },
+  "transactionId": "TX001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SW01",
+  "timestamp": {
+    "$date": "2025-05-29T12:00:21.471Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T12:00:21.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T12:00:21.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384c553e6642bee2439a08"
+  },
+  "transactionId": "TX001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SW01",
+  "timestamp": {
+    "$date": "2025-05-29T12:00:21.471Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-29T12:00:21.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T12:00:21.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68384c553e6642bee2439a10"
+  },
+  "transactionId": "TX001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SW01",
+  "timestamp": {
+    "$date": "2025-06-04T12:00:21.471Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-04T12:00:21.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T12:00:21.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68446065848cd28a8c03535c"
+  },
+  "transactionId": "TXN001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Lunch",
+    "Drink"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 460,
+  "timestamp": {
+    "$date": "2025-06-07T15:53:09.706Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T15:53:09.706Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T15:53:09.706Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684461f2ebbb67a870aebea8"
+  },
+  "transactionId": "TXN001",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Lunch",
+    "Drink"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 410,
+  "timestamp": {
+    "$date": "2025-06-07T15:59:46.512Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T15:59:46.513Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T15:59:46.513Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684461ffebbb67a870aebeac"
+  },
+  "transactionId": "TXN777",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafe",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 25,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 385,
+  "timestamp": {
+    "$date": "2025-06-07T15:59:59.209Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T15:59:59.210Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T15:59:59.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684462d8aab8af8013b9c01c"
+  },
+  "transactionId": "TXN777",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafe",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 25,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 360,
+  "timestamp": {
+    "$date": "2025-06-07T16:03:36.163Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T16:03:36.164Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T16:03:36.164Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684462e0aab8af8013b9c021"
+  },
+  "transactionId": "TXN777",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafe",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 25,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 335,
+  "timestamp": {
+    "$date": "2025-06-07T16:03:44.651Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T16:03:44.652Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T16:03:44.652Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684462edaab8af8013b9c026"
+  },
+  "transactionId": "TXN787",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafe",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 25,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 310,
+  "timestamp": {
+    "$date": "2025-06-07T16:03:57.599Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T16:03:57.599Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T16:03:57.599Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684462f6aab8af8013b9c040"
+  },
+  "transactionId": "TXN787",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafe",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 25,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 285,
+  "timestamp": {
+    "$date": "2025-06-07T16:04:06.406Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T16:04:06.406Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T16:04:06.406Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68446310aab8af8013b9c045"
+  },
+  "transactionId": "TXN787",
+  "userId": "S01",
+  "merchantId": "M01",
+  "merchantName": "Cafe",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 250,
+  "action": "purchase",
+  "walletID": "SWS01",
+  "balanceAfter": 35,
+  "timestamp": {
+    "$date": "2025-06-07T16:04:32.471Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T16:04:32.471Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T16:04:32.471Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a18db8eb50e7e5746d1e"
+  },
+  "transactionId": "TX1749328269521",
+  "userId": "6835fafc0ab3e4ce7e72c976",
+  "items": [],
+  "amount": 20,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 300,
+  "timestamp": {
+    "$date": "2025-06-07T20:31:09.521Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:31:09.523Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:31:09.523Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a35dbaad1b2aaef8738a"
+  },
+  "transactionId": "TX1749328733371",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 450,
+  "timestamp": {
+    "$date": "2025-06-07T20:38:53.371Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:38:53.372Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:38:53.372Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a363baad1b2aaef87398"
+  },
+  "transactionId": "TX1749328739181",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 550,
+  "timestamp": {
+    "$date": "2025-06-07T20:38:59.181Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:38:59.181Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:38:59.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a366baad1b2aaef873bb"
+  },
+  "transactionId": "TX1749328742315",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 650,
+  "timestamp": {
+    "$date": "2025-06-07T20:39:02.315Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:39:02.315Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:39:02.315Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a388baad1b2aaef873c9"
+  },
+  "transactionId": "TX1749328776313",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "deduct",
+  "walletID": "SWS02",
+  "balanceAfter": 550,
+  "timestamp": {
+    "$date": "2025-06-07T20:39:36.313Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:39:36.313Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:39:36.313Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a389baad1b2aaef873d7"
+  },
+  "transactionId": "TX1749328777869",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "deduct",
+  "walletID": "SWS02",
+  "balanceAfter": 450,
+  "timestamp": {
+    "$date": "2025-06-07T20:39:37.869Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:39:37.870Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:39:37.870Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a38dbaad1b2aaef873e5"
+  },
+  "transactionId": "TX1749328781180",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "deduct",
+  "walletID": "SWS02",
+  "balanceAfter": 350,
+  "timestamp": {
+    "$date": "2025-06-07T20:39:41.180Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:39:41.180Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:39:41.180Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844a392baad1b2aaef873f3"
+  },
+  "transactionId": "TX1749328786522",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "deduct",
+  "walletID": "SWS02",
+  "balanceAfter": 250,
+  "timestamp": {
+    "$date": "2025-06-07T20:39:46.522Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T20:39:46.522Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T20:39:46.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b4b2a6163d661390696a"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 200,
+  "timestamp": {
+    "$date": "2025-06-07T21:52:50.237Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T21:52:50.238Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T21:52:50.238Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b4c3a6163d661390698e"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 150,
+  "timestamp": {
+    "$date": "2025-06-07T21:53:07.130Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T21:53:07.130Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T21:53:07.130Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b4d9a6163d6613906992"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 100,
+  "timestamp": {
+    "$date": "2025-06-07T21:53:29.885Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T21:53:29.885Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T21:53:29.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b4eaa6163d66139069a6"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 50,
+  "timestamp": {
+    "$date": "2025-06-07T21:53:46.021Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T21:53:46.021Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T21:53:46.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b4f4a6163d66139069ba"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 0,
+  "timestamp": {
+    "$date": "2025-06-07T21:53:56.285Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T21:53:56.285Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T21:53:56.285Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b67214851256c869f5d5"
+  },
+  "transactionId": "TX1749333618757",
+  "userId": "S02",
+  "items": [],
+  "amount": 1000,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 1000,
+  "timestamp": {
+    "$date": "2025-06-07T22:00:18.757Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:00:18.760Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:00:18.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b69714851256c869f5f3"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 950,
+  "timestamp": {
+    "$date": "2025-06-07T22:00:55.698Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:00:55.698Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:00:55.698Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b6a214851256c869f611"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Burger",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 900,
+  "timestamp": {
+    "$date": "2025-06-07T22:01:06.445Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:01:06.445Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:01:06.445Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b76165d171c7fc00dc8d"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "CocaCola",
+    "Juice"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 850,
+  "timestamp": {
+    "$date": "2025-06-07T22:04:17.466Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:04:17.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:04:17.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b7b865d171c7fc00dcb4"
+  },
+  "transactionId": "TX002",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "CocaCola",
+    "RedBull"
+  ],
+  "amount": 50,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 800,
+  "timestamp": {
+    "$date": "2025-06-07T22:05:44.244Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:05:44.244Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:05:44.244Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b91365d171c7fc00dd26"
+  },
+  "transactionId": "TXM01",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Pizza",
+    "Juice"
+  ],
+  "amount": 60,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 740,
+  "timestamp": {
+    "$date": "2025-05-10T10:30:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:11:31.140Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:11:31.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6844b94e65d171c7fc00dd47"
+  },
+  "transactionId": "TXYR01",
+  "userId": "S02",
+  "merchantId": "M01",
+  "merchantName": "Cafeteria",
+  "items": [
+    "Shawarma",
+    "Soda"
+  ],
+  "amount": 45,
+  "action": "purchase",
+  "walletID": "SWS02",
+  "balanceAfter": 695,
+  "timestamp": {
+    "$date": "2024-06-08T13:30:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-07T22:12:30.926Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-07T22:12:30.926Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684f6406f013a4d2885773e4"
+  },
+  "transactionId": "TX1750033414118",
+  "userId": "6835fafc0ab3e4ce7e72c976",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 705,
+  "timestamp": {
+    "$date": "2025-06-16T00:23:34.118Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-16T00:23:34.120Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-16T00:23:34.120Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684f6426f013a4d2885774d7"
+  },
+  "transactionId": "TX1750033446796",
+  "userId": "6835fafc0ab3e4ce7e72c976",
+  "items": [],
+  "amount": 5,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 710,
+  "timestamp": {
+    "$date": "2025-06-16T00:24:06.796Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-16T00:24:06.796Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-16T00:24:06.796Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684f683e21d2215069aeaa2b"
+  },
+  "transactionId": "TX1750034494741",
+  "userId": "S02",
+  "items": [],
+  "amount": 10,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 720,
+  "timestamp": {
+    "$date": "2025-06-16T00:41:34.741Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-16T00:41:34.743Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-16T00:41:34.743Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685206833a4ffab125067d0f"
+  },
+  "transactionId": "TX1750206083222",
+  "userId": "S02",
+  "items": [],
+  "amount": 1000,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 1720,
+  "timestamp": {
+    "$date": "2025-06-18T00:21:23.222Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:21:23.224Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T00:21:23.224Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6852068a3a4ffab125067d13"
+  },
+  "transactionId": "TX1750206090443",
+  "userId": "S02",
+  "items": [],
+  "amount": 1000,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 2720,
+  "timestamp": {
+    "$date": "2025-06-18T00:21:30.443Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:21:30.443Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T00:21:30.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6852068b3a4ffab125067d17"
+  },
+  "transactionId": "TX1750206091218",
+  "userId": "S02",
+  "items": [],
+  "amount": 1000,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 3720,
+  "timestamp": {
+    "$date": "2025-06-18T00:21:31.218Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:21:31.218Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T00:21:31.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6852070e8a9d6dcc59e66986"
+  },
+  "transactionId": "TX1750206222850",
+  "userId": "S02",
+  "items": [],
+  "amount": 1000,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 4720,
+  "timestamp": {
+    "$date": "2025-06-18T00:23:42.850Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:23:42.853Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T00:23:42.853Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685207698a9d6dcc59e66ae8"
+  },
+  "transactionId": "TX1750206313974",
+  "userId": "S02",
+  "items": [],
+  "amount": 100,
+  "action": "add",
+  "walletID": "SWS02",
+  "balanceAfter": 4820,
+  "timestamp": {
+    "$date": "2025-06-18T00:25:13.974Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:25:13.975Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T00:25:13.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54b4"
+  },
+  "userId": "S23",
+  "action": "add",
+  "amount": 27.37,
+  "timestamp": "2025-06-09T01:06:04"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54b5"
+  },
+  "userId": "S09",
+  "action": "deduct",
+  "amount": 14.79,
+  "timestamp": "2025-06-07T04:22:11"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54b6"
+  },
+  "userId": "S18",
+  "action": "purchase",
+  "amount": 241.49,
+  "timestamp": "2025-06-09T16:01:46"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54b7"
+  },
+  "userId": "S09",
+  "action": "purchase",
+  "amount": 241.09,
+  "timestamp": "2025-05-28T10:30:37"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54b8"
+  },
+  "userId": "S16",
+  "action": "purchase",
+  "amount": 108.42,
+  "timestamp": "2025-06-05T16:05:21"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54b9"
+  },
+  "userId": "S11",
+  "action": "purchase",
+  "amount": 248.29,
+  "timestamp": "2025-06-17T02:48:04"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ba"
+  },
+  "userId": "S18",
+  "action": "deduct",
+  "amount": 298.21,
+  "timestamp": "2025-05-25T10:47:02"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54bb"
+  },
+  "userId": "S29",
+  "action": "purchase",
+  "amount": 250.7,
+  "timestamp": "2025-06-08T08:43:49"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54bc"
+  },
+  "userId": "S17",
+  "action": "deduct",
+  "amount": 250.16,
+  "timestamp": "2025-06-15T12:45:22"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54bd"
+  },
+  "userId": "S05",
+  "action": "purchase",
+  "amount": 214.27,
+  "timestamp": "2025-06-06T10:52:07"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54be"
+  },
+  "userId": "S20",
+  "action": "deduct",
+  "amount": 76.49,
+  "timestamp": "2025-06-17T11:38:43"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54bf"
+  },
+  "userId": "S03",
+  "action": "add",
+  "amount": 109.72,
+  "timestamp": "2025-06-04T11:08:01"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c0"
+  },
+  "userId": "S06",
+  "action": "deduct",
+  "amount": 197.35,
+  "timestamp": "2025-06-02T21:06:37"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c1"
+  },
+  "userId": "S22",
+  "action": "purchase",
+  "amount": 271.6,
+  "timestamp": "2025-06-05T17:34:15"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c2"
+  },
+  "userId": "S02",
+  "action": "deduct",
+  "amount": 124.69,
+  "timestamp": "2025-05-30T06:49:56"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c3"
+  },
+  "userId": "S27",
+  "action": "deduct",
+  "amount": 168.56,
+  "timestamp": "2025-05-27T13:07:28"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c4"
+  },
+  "userId": "S08",
+  "action": "purchase",
+  "amount": 125.22,
+  "timestamp": "2025-05-23T04:49:56"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c5"
+  },
+  "userId": "S30",
+  "action": "deduct",
+  "amount": 135.58,
+  "timestamp": "2025-05-31T16:24:33"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c6"
+  },
+  "userId": "S19",
+  "action": "deduct",
+  "amount": 80.39,
+  "timestamp": "2025-05-26T02:30:40"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c7"
+  },
+  "userId": "S24",
+  "action": "purchase",
+  "amount": 137.79,
+  "timestamp": "2025-06-02T16:58:46"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c8"
+  },
+  "userId": "S29",
+  "action": "deduct",
+  "amount": 251.73,
+  "timestamp": "2025-06-08T15:02:01"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54c9"
+  },
+  "userId": "S26",
+  "action": "add",
+  "amount": 247.53,
+  "timestamp": "2025-06-05T07:56:00"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ca"
+  },
+  "userId": "S28",
+  "action": "deduct",
+  "amount": 247.8,
+  "timestamp": "2025-05-21T16:41:09"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54cb"
+  },
+  "userId": "S24",
+  "action": "deduct",
+  "amount": 54.08,
+  "timestamp": "2025-05-19T11:33:03"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54cc"
+  },
+  "userId": "S07",
+  "action": "deduct",
+  "amount": 80.43,
+  "timestamp": "2025-05-29T02:33:18"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54cd"
+  },
+  "userId": "S27",
+  "action": "deduct",
+  "amount": 211.92,
+  "timestamp": "2025-06-09T13:12:10"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ce"
+  },
+  "userId": "S22",
+  "action": "purchase",
+  "amount": 205.4,
+  "timestamp": "2025-06-10T00:58:27"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54cf"
+  },
+  "userId": "S26",
+  "action": "deduct",
+  "amount": 50.01,
+  "timestamp": "2025-06-03T14:04:09"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d0"
+  },
+  "userId": "S09",
+  "action": "add",
+  "amount": 22.43,
+  "timestamp": "2025-05-20T21:02:45"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d1"
+  },
+  "userId": "S17",
+  "action": "add",
+  "amount": 267.57,
+  "timestamp": "2025-05-26T16:43:52"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d2"
+  },
+  "userId": "S15",
+  "action": "purchase",
+  "amount": 30.36,
+  "timestamp": "2025-05-30T10:11:44"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d3"
+  },
+  "userId": "S20",
+  "action": "add",
+  "amount": 192.6,
+  "timestamp": "2025-06-04T11:15:32"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d4"
+  },
+  "userId": "S04",
+  "action": "deduct",
+  "amount": 293.63,
+  "timestamp": "2025-06-08T08:28:50"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d5"
+  },
+  "userId": "S01",
+  "action": "add",
+  "amount": 208.76,
+  "timestamp": "2025-05-20T03:11:31"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d6"
+  },
+  "userId": "S29",
+  "action": "add",
+  "amount": 26.39,
+  "timestamp": "2025-05-22T01:36:09"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d7"
+  },
+  "userId": "S04",
+  "action": "purchase",
+  "amount": 295.54,
+  "timestamp": "2025-05-25T12:01:37"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d8"
+  },
+  "userId": "S21",
+  "action": "add",
+  "amount": 279.9,
+  "timestamp": "2025-05-20T08:24:00"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54d9"
+  },
+  "userId": "S26",
+  "action": "deduct",
+  "amount": 94.54,
+  "timestamp": "2025-06-01T11:59:47"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54da"
+  },
+  "userId": "S01",
+  "action": "add",
+  "amount": 159.75,
+  "timestamp": "2025-06-16T08:04:29"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54db"
+  },
+  "userId": "S08",
+  "action": "purchase",
+  "amount": 195.01,
+  "timestamp": "2025-05-24T08:37:03"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54dc"
+  },
+  "userId": "S13",
+  "action": "purchase",
+  "amount": 282.84,
+  "timestamp": "2025-06-03T14:07:10"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54dd"
+  },
+  "userId": "S15",
+  "action": "add",
+  "amount": 221.95,
+  "timestamp": "2025-05-22T09:33:13"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54de"
+  },
+  "userId": "S06",
+  "action": "purchase",
+  "amount": 114.66,
+  "timestamp": "2025-05-27T23:13:08"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54df"
+  },
+  "userId": "S04",
+  "action": "purchase",
+  "amount": 170.27,
+  "timestamp": "2025-05-26T23:43:47"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e0"
+  },
+  "userId": "S08",
+  "action": "add",
+  "amount": 245.45,
+  "timestamp": "2025-06-02T07:07:08"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e1"
+  },
+  "userId": "S13",
+  "action": "deduct",
+  "amount": 40.99,
+  "timestamp": "2025-06-11T04:52:34"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e2"
+  },
+  "userId": "S06",
+  "action": "add",
+  "amount": 220.93,
+  "timestamp": "2025-05-28T22:50:31"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e3"
+  },
+  "userId": "S19",
+  "action": "add",
+  "amount": 80.69,
+  "timestamp": "2025-05-29T08:35:24"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e4"
+  },
+  "userId": "S07",
+  "action": "deduct",
+  "amount": 250.85,
+  "timestamp": "2025-05-21T16:38:44"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e5"
+  },
+  "userId": "S26",
+  "action": "purchase",
+  "amount": 282.63,
+  "timestamp": "2025-05-24T20:37:00"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e6"
+  },
+  "userId": "S06",
+  "action": "purchase",
+  "amount": 71.89,
+  "timestamp": "2025-06-14T22:40:49"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e7"
+  },
+  "userId": "S18",
+  "action": "add",
+  "amount": 50,
+  "timestamp": "2025-06-05T16:38:21"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e8"
+  },
+  "userId": "S23",
+  "action": "deduct",
+  "amount": 211.18,
+  "timestamp": "2025-06-12T07:15:41"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54e9"
+  },
+  "userId": "S21",
+  "action": "purchase",
+  "amount": 159.67,
+  "timestamp": "2025-05-31T13:21:53"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ea"
+  },
+  "userId": "S29",
+  "action": "purchase",
+  "amount": 222.95,
+  "timestamp": "2025-06-14T08:29:56"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54eb"
+  },
+  "userId": "S24",
+  "action": "purchase",
+  "amount": 296.24,
+  "timestamp": "2025-05-24T17:32:19"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ec"
+  },
+  "userId": "S14",
+  "action": "purchase",
+  "amount": 219.22,
+  "timestamp": "2025-05-19T01:34:31"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ed"
+  },
+  "userId": "S17",
+  "action": "deduct",
+  "amount": 282.34,
+  "timestamp": "2025-05-23T04:52:56"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ee"
+  },
+  "userId": "S01",
+  "action": "purchase",
+  "amount": 106.19,
+  "timestamp": "2025-06-13T04:13:18"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ef"
+  },
+  "userId": "S15",
+  "action": "purchase",
+  "amount": 170.17,
+  "timestamp": "2025-06-05T12:47:55"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f0"
+  },
+  "userId": "S08",
+  "action": "add",
+  "amount": 115.02,
+  "timestamp": "2025-06-11T16:39:18"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f1"
+  },
+  "userId": "S29",
+  "action": "add",
+  "amount": 277.72,
+  "timestamp": "2025-05-29T18:48:49"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f2"
+  },
+  "userId": "S21",
+  "action": "deduct",
+  "amount": 39.61,
+  "timestamp": "2025-05-21T12:19:02"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f3"
+  },
+  "userId": "S08",
+  "action": "purchase",
+  "amount": 229.87,
+  "timestamp": "2025-06-04T18:41:10"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f4"
+  },
+  "userId": "S14",
+  "action": "add",
+  "amount": 281.5,
+  "timestamp": "2025-05-29T22:02:46"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f5"
+  },
+  "userId": "S08",
+  "action": "deduct",
+  "amount": 80.89,
+  "timestamp": "2025-06-05T01:23:32"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f6"
+  },
+  "userId": "S26",
+  "action": "add",
+  "amount": 215.96,
+  "timestamp": "2025-05-20T17:47:37"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f7"
+  },
+  "userId": "S22",
+  "action": "deduct",
+  "amount": 220.39,
+  "timestamp": "2025-05-23T19:54:41"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f8"
+  },
+  "userId": "S26",
+  "action": "deduct",
+  "amount": 168.97,
+  "timestamp": "2025-05-31T07:35:56"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54f9"
+  },
+  "userId": "S20",
+  "action": "add",
+  "amount": 126.57,
+  "timestamp": "2025-05-23T12:04:17"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54fa"
+  },
+  "userId": "S09",
+  "action": "deduct",
+  "amount": 90.33,
+  "timestamp": "2025-05-30T03:00:48"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54fb"
+  },
+  "userId": "S13",
+  "action": "purchase",
+  "amount": 178.36,
+  "timestamp": "2025-05-26T01:34:59"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54fc"
+  },
+  "userId": "S11",
+  "action": "purchase",
+  "amount": 32.78,
+  "timestamp": "2025-06-10T00:52:50"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54fd"
+  },
+  "userId": "S19",
+  "action": "purchase",
+  "amount": 222.75,
+  "timestamp": "2025-05-25T23:13:07"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54fe"
+  },
+  "userId": "S25",
+  "action": "add",
+  "amount": 154.75,
+  "timestamp": "2025-05-28T17:08:57"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e54ff"
+  },
+  "userId": "S26",
+  "action": "add",
+  "amount": 172.63,
+  "timestamp": "2025-05-29T22:23:08"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5500"
+  },
+  "userId": "S26",
+  "action": "purchase",
+  "amount": 231.23,
+  "timestamp": "2025-05-30T16:08:45"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5501"
+  },
+  "userId": "S27",
+  "action": "add",
+  "amount": 261.11,
+  "timestamp": "2025-05-27T01:12:37"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5502"
+  },
+  "userId": "S30",
+  "action": "deduct",
+  "amount": 89.57,
+  "timestamp": "2025-06-06T22:31:28"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5503"
+  },
+  "userId": "S15",
+  "action": "deduct",
+  "amount": 258.02,
+  "timestamp": "2025-05-27T01:49:24"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5504"
+  },
+  "userId": "S06",
+  "action": "deduct",
+  "amount": 128.99,
+  "timestamp": "2025-06-03T03:27:29"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5505"
+  },
+  "userId": "S04",
+  "action": "add",
+  "amount": 247.9,
+  "timestamp": "2025-06-09T15:05:12"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5506"
+  },
+  "userId": "S06",
+  "action": "add",
+  "amount": 209.05,
+  "timestamp": "2025-06-14T21:06:25"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5507"
+  },
+  "userId": "S27",
+  "action": "deduct",
+  "amount": 228.7,
+  "timestamp": "2025-06-16T21:15:31"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5508"
+  },
+  "userId": "S03",
+  "action": "deduct",
+  "amount": 135.99,
+  "timestamp": "2025-06-15T17:44:16"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5509"
+  },
+  "userId": "S16",
+  "action": "deduct",
+  "amount": 201.43,
+  "timestamp": "2025-06-15T14:00:27"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e550a"
+  },
+  "userId": "S10",
+  "action": "purchase",
+  "amount": 199.24,
+  "timestamp": "2025-06-02T11:36:11"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e550b"
+  },
+  "userId": "S05",
+  "action": "purchase",
+  "amount": 216.5,
+  "timestamp": "2025-05-28T19:11:59"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e550c"
+  },
+  "userId": "S23",
+  "action": "purchase",
+  "amount": 255.52,
+  "timestamp": "2025-06-03T19:33:11"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e550d"
+  },
+  "userId": "S06",
+  "action": "add",
+  "amount": 127.18,
+  "timestamp": "2025-05-26T13:46:42"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e550e"
+  },
+  "userId": "S12",
+  "action": "add",
+  "amount": 183.53,
+  "timestamp": "2025-05-19T09:34:19"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e550f"
+  },
+  "userId": "S19",
+  "action": "purchase",
+  "amount": 153.59,
+  "timestamp": "2025-05-28T20:35:28"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5510"
+  },
+  "userId": "S08",
+  "action": "deduct",
+  "amount": 162.73,
+  "timestamp": "2025-05-26T07:44:59"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5511"
+  },
+  "userId": "S05",
+  "action": "add",
+  "amount": 12.45,
+  "timestamp": "2025-06-07T08:12:29"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5512"
+  },
+  "userId": "S22",
+  "action": "deduct",
+  "amount": 20.94,
+  "timestamp": "2025-06-04T01:47:27"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5513"
+  },
+  "userId": "S25",
+  "action": "deduct",
+  "amount": 195.34,
+  "timestamp": "2025-06-11T08:00:43"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5514"
+  },
+  "userId": "S07",
+  "action": "purchase",
+  "amount": 100.27,
+  "timestamp": "2025-05-22T02:30:03"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5515"
+  },
+  "userId": "S04",
+  "action": "add",
+  "amount": 189.11,
+  "timestamp": "2025-05-21T00:17:36"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5516"
+  },
+  "userId": "S28",
+  "action": "purchase",
+  "amount": 109.5,
+  "timestamp": "2025-05-30T04:49:59"
+},
+{
+  "_id": {
+    "$oid": "6852165b3204600f652e5517"
+  },
+  "userId": "S09",
+  "action": "purchase",
+  "amount": 128.19,
+  "timestamp": "2025-06-04T22:10:39"
+}]

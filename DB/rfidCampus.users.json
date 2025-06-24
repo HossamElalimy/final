@@ -1,0 +1,352 @@
+[{
+  "_id": {
+    "$oid": "67f05e7dafae221b88ff707a"
+  },
+  "username": "Hossam",
+  "email": "admin@example.com",
+  "password": "$2b$10$yanlWudFlFh.Yp1TX0ENAORWINBi7yQ8R4zJY/yW5YSIpUqCMxdwC",
+  "role": "admin",
+  "__v": 0,
+  "joined": {
+    "$date": "2025-04-10T11:09:49.528Z"
+  },
+  "status": "active",
+  "updatedAt": {
+    "$date": "2025-04-15T15:09:47.851Z"
+  },
+  "phoneNumber": "01098954754",
+  "fullname": "Hossam Mohamed ",
+  "fullName": "Admin Hossam"
+},
+{
+  "_id": {
+    "$oid": "67fe8e03aea4c1351ed3a79a"
+  },
+  "username": "Student",
+  "fullName": "Ahmed Ali",
+  "email": "student@example.com",
+  "password": "$2b$10$Rdv2ypSHFlNusXUEFvcgiODjtzD6O5JZM0IvRXe4Xj373vGKQJkWO",
+  "phoneNumber": "01098954754",
+  "faculty": "Computer Science",
+  "year": "2",
+  "role": "student",
+  "status": "active",
+  "userId": "S01",
+  "joined": {
+    "$date": "2025-04-15T16:49:07.206Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-15T16:49:07.214Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:51:54.158Z"
+  },
+  "__v": 3,
+  "enrolledCourses": [
+    "CS01xx"
+  ],
+  "studentIDs": [],
+  "studentData": {
+    "enrolledCourses": [
+      "CS323"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67ff68add57084e1345560f3"
+  },
+  "username": "Teacher",
+  "fullName": "Teacher Hossam",
+  "email": "teacher1@gmail.com",
+  "password": "$2b$10$6HQOapVSgeWU/KNR1jbcT.heOcpsKd.5IBdbnOSNBiv4aJMXtP8JS",
+  "phoneNumber": "0105445444",
+  "faculty": "",
+  "year": "",
+  "role": "teacher",
+  "status": "active",
+  "userId": "T01",
+  "joined": {
+    "$date": "2025-04-16T08:22:05.583Z"
+  },
+  "createdAt": {
+    "$date": "2025-04-16T08:22:05.596Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T14:01:16.433Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68209da66137550d44ac5c27"
+  },
+  "username": "Merchant",
+  "fullName": "Sweet Mark",
+  "email": "sweet@example.com",
+  "password": "$2b$10$tnjSVZXGxZPt17jDdk28cugg7VykapYsZjhpW/Ho1TYJTvtmgjZDW",
+  "phoneNumber": "01041456214",
+  "merchantName": "SweetMarket",
+  "merchantType": "SuperMarket",
+  "role": "merchant",
+  "status": "active",
+  "userId": "M01",
+  "joined": {
+    "$date": "2025-05-11T12:52:54.529Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-11T12:52:54.532Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-11T12:52:54.532Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835bd2bda4987c4034ba7f5"
+  },
+  "username": "Deanest",
+  "fullName": "Dean",
+  "email": "dean@gmail.com",
+  "password": "$2b$10$LeS1pUz/X3vpxZBJZoF91.3tZG3YNGlogE4483lZ2BvPye/Et5.le",
+  "phoneNumber": "01088954574",
+  "faculty": "Computer Science",
+  "role": "dean",
+  "status": "active",
+  "userId": "D01",
+  "joined": {
+    "$date": "2025-05-27T13:24:59.237Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T13:24:59.240Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T13:24:59.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835bd74da4987c4034ba7fb"
+  },
+  "username": "ViceDean",
+  "fullName": "VDean",
+  "email": "vdean@gmail.com",
+  "password": "$2b$10$pQ8rKw5r6549fs.vfMEkSuGuKewnOuey.G7MGhwd.JOGQG5C2eIT6",
+  "phoneNumber": "010986547544",
+  "faculty": "Mass Communication",
+  "role": "vice_dean",
+  "status": "active",
+  "userId": "V01",
+  "joined": {
+    "$date": "2025-05-27T13:26:12.755Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T13:26:12.756Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T13:26:12.756Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835c1a1f661f1ab93c770ea"
+  },
+  "username": "Parent",
+  "fullName": "Parent",
+  "email": "parent@example.com",
+  "password": "$2b$10$qCM8LH8jPg.QB/KPvhLGiO8tr7QsO.r5dKI1RtuwpMmBguVdeJ/cK",
+  "phoneNumber": "01098954754",
+  "studentIDs": [
+    "S02"
+  ],
+  "role": "parent",
+  "status": "active",
+  "userId": "P01",
+  "joined": {
+    "$date": "2025-05-27T13:44:01.844Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T13:44:01.847Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T22:59:06.439Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835fafc0ab3e4ce7e72c976"
+  },
+  "username": "Student2",
+  "fullName": "Student2",
+  "email": "student2@example.com",
+  "password": "$2b$10$t/PqYBH94RaCE0IstBRMAeGhYnbMIt7znQqJqNlInZ0/ifXfzDQcW",
+  "phoneNumber": "01098954754",
+  "faculty": "Dentistry",
+  "year": "4",
+  "studentIDs": [],
+  "role": "student",
+  "status": "active",
+  "userId": "S02",
+  "joined": {
+    "$date": "2025-05-27T17:48:44.626Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T17:48:44.629Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T14:55:01.658Z"
+  },
+  "__v": 1,
+  "enrolledCourses": [],
+  "studentData": {
+    "enrolledCourses": [
+      "LAB101",
+      "TEST101",
+      "TEST1",
+      "TEST21",
+      "TEST211",
+      "TEST090",
+      "TEST90",
+      "TEST9",
+      "TEST91",
+      "TEST84",
+      "TEST844",
+      "TEST44",
+      "TEST144",
+      "TEST644",
+      "TEST044",
+      "TESTL44",
+      "Dent101",
+      "Dents101",
+      "Dentas101",
+      "Dentaas101",
+      "Dentaasa101",
+      "Dentamasa101",
+      "Dentafmasa101",
+      "Dentafmaasa101",
+      "Dentafmfagasa101",
+      "Dentafmfdagasa101",
+      "Dentafmffdagasa101",
+      "Dentaftmffdagasa101",
+      "testt3ban",
+      "testst3ban",
+      "testst23ban",
+      "NewToTest"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "6835fd6cbc23d2e6466ca059"
+  },
+  "username": "Secretary",
+  "fullName": "Sec",
+  "email": "sec@gmail.com",
+  "password": "$2b$10$IiBWz6jGh.HYI48eWuaeOOBeoD.FUPyia8s9NtPkhST5wumU4TIv6",
+  "phoneNumber": "01045213012",
+  "studentIDs": [],
+  "role": "secretary",
+  "faculty": "Computer Science",
+  "status": "active",
+  "userId": "SC01",
+  "joined": {
+    "$date": "2025-05-27T17:59:08.498Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-27T17:59:08.501Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T17:59:08.501Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837909ea04907715c01a214"
+  },
+  "username": "blocked",
+  "fullName": "blocked",
+  "email": "blocked@gmail.com",
+  "password": "$2b$10$BTUNypT3NVc2ec9ej0bEmey5XHwfB6ya6326UcZfEROVzC2.wPbdu",
+  "phoneNumber": "01041456214",
+  "year": "1",
+  "studentIDs": [],
+  "role": "student",
+  "faculty": "Mass Communication",
+  "status": "blocked",
+  "userId": "S03",
+  "joined": {
+    "$date": "2025-05-28T22:39:26.102Z"
+  },
+  "createdAt": {
+    "$date": "2025-05-28T22:39:26.105Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:51:54.163Z"
+  },
+  "__v": 1,
+  "enrolledCourses": [],
+  "studentData": {
+    "enrolledCourses": [
+      "CS301"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "684459152b0da3c57724fde3"
+  },
+  "username": "testuser",
+  "fullName": "Test User",
+  "email": "testuser@example.com",
+  "password": "$2b$10$wyx1nQDoUGrYHNivwWgi2ONoxowskHDUwsKCjxyegmTsl7o1M2oye",
+  "phoneNumber": "0123456789",
+  "year": "2",
+  "studentIDs": [],
+  "role": "student",
+  "faculty": "Engineering",
+  "status": "active",
+  "userId": "S04",
+  "createdAt": {
+    "$date": "2025-06-07T15:21:57.318Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:51:54.162Z"
+  },
+  "__v": 0,
+  "studentData": {
+    "enrolledCourses": [
+      "CS301"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "68521584cfddec1ceafbc76c"
+  },
+  "username": "TESTER",
+  "fullName": "tester",
+  "email": "tester@tester.com",
+  "password": "$2b$10$6bWM7nvVEEmkKULjOvcIyO9iNn0A0VEPMHBUt09VEQA1up4KdsrT2",
+  "phoneNumber": "01041456214",
+  "year": "4",
+  "studentIDs": [],
+  "role": "student",
+  "faculty": "Languages",
+  "studentData": {
+    "enrolledCourses": []
+  },
+  "status": "active",
+  "userId": "S05",
+  "createdAt": {
+    "$date": "2025-06-18T01:25:24.583Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T01:25:24.583Z"
+  },
+  "__v": 0
+}]

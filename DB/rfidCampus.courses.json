@@ -1,0 +1,1349 @@
+[{
+  "_id": {
+    "$oid": "683884f61dc7678280ca0969"
+  },
+  "courseCode": "CS100x",
+  "courseName": "Introduction to Computer Science",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "type": "lab",
+      "day": "Thursday",
+      "timeStart": "22:01",
+      "timeEnd": "00:01",
+      "_id": {
+        "$oid": "683884f61dc7678280ca096a"
+      }
+    },
+    {
+      "type": "lab",
+      "day": "Saturday",
+      "timeStart": "12:01",
+      "timeEnd": "15:01",
+      "_id": {
+        "$oid": "683884f61dc7678280ca096b"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Thursday",
+      "timeStart": "10:11",
+      "timeEnd": "02:11",
+      "room": "G210",
+      "_id": {
+        "$oid": "6838dba1e278223f8e9feb02"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [],
+  "createdAt": {
+    "$date": "2025-05-29T16:01:58.180Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T22:11:45.108Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683885241dc7678280ca097f"
+  },
+  "courseCode": "CS200x",
+  "courseName": "Introduction to Computer Science",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "day": "Thursday",
+      "timeStart": "15:03",
+      "timeEnd": "16:03",
+      "type": "tutorial",
+      "_id": {
+        "$oid": "683885571dc7678280ca0991"
+      }
+    },
+    {
+      "day": "",
+      "timeStart": "",
+      "timeEnd": "",
+      "type": "lecture",
+      "_id": {
+        "$oid": "683885571dc7678280ca0992"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [],
+  "createdAt": {
+    "$date": "2025-05-29T16:02:44.978Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T16:03:35.353Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6838c04a309ea96ba2f11cc6"
+  },
+  "courseCode": "CS323",
+  "courseName": "Intro to cs",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "type": "tutorial",
+      "day": "Thursday",
+      "timeStart": "12:14",
+      "timeEnd": "14:14",
+      "room": "G202",
+      "_id": {
+        "$oid": "6838c04a309ea96ba2f11cc7"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Saturday",
+      "timeStart": "15:48",
+      "timeEnd": "17:48",
+      "room": "A02",
+      "_id": {
+        "$oid": "683afabadf134b2fb0a18d96"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S01"
+  ],
+  "createdAt": {
+    "$date": "2025-05-29T20:15:06.719Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-31T12:48:58.327Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6838c6588e75e66943eaa740"
+  },
+  "courseCode": "DE213",
+  "courseName": "Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Thursday",
+      "timeStart": "13:40",
+      "timeEnd": "14:40",
+      "room": "H141",
+      "_id": {
+        "$oid": "6838c6588e75e66943eaa741"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Saturday",
+      "timeStart": "16:09",
+      "timeEnd": "16:10",
+      "room": "A102",
+      "_id": {
+        "$oid": "683aff7d1e31a011e8a6629a"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Saturday",
+      "timeStart": "18:51",
+      "timeEnd": "18:52",
+      "room": "",
+      "_id": {
+        "$oid": "683b25836f75766818d2a352"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Saturday",
+      "timeStart": "18:54",
+      "timeEnd": "18:55",
+      "room": "",
+      "_id": {
+        "$oid": "683b26066f75766818d2a3ef"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "07:23",
+      "timeEnd": "08:23",
+      "room": "A111",
+      "_id": {
+        "$oid": "683f59cc415fce8ce2b23e8d"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "16:38",
+      "timeEnd": "16:39",
+      "room": "G202",
+      "_id": {
+        "$oid": "68404c08415fce8ce2b28898"
+      }
+    }
+  ],
+  "teachers": [],
+  "students": [],
+  "createdAt": {
+    "$date": "2025-05-29T20:40:56.771Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T13:37:12.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68445cfedbbf97c1739956bb"
+  },
+  "courseCode": "CS301",
+  "courseName": "Operating Systems",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Sunday",
+      "timeStart": "10:00",
+      "timeEnd": "12:00",
+      "room": "C101",
+      "_id": {
+        "$oid": "68445cfedbbf97c1739956bc"
+      }
+    },
+    {
+      "type": "lab",
+      "day": "Tuesday",
+      "timeStart": "14:00",
+      "timeEnd": "16:00",
+      "room": "Lab2",
+      "_id": {
+        "$oid": "68445cfedbbf97c1739956bd"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "11:00",
+      "timeEnd": "12:00",
+      "room": "A101",
+      "_id": {
+        "$oid": "6851d63ba8b862ca4819fa32"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "8:00",
+      "timeEnd": "9:00",
+      "room": "A101",
+      "_id": {
+        "$oid": "6851d899a8b862ca481cbea4"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "8:00",
+      "timeEnd": "9:00",
+      "room": "A101",
+      "_id": {
+        "$oid": "6851d8a2a8b862ca481cd3ca"
+      }
+    },
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "1:05",
+      "timeEnd": "1:08",
+      "room": "A101",
+      "_id": {
+        "$oid": "6851e6c1e3b7ec2dafb22dec"
+      }
+    }
+  ],
+  "teachers": [
+    "T01",
+    "T02"
+  ],
+  "students": [
+    "S04",
+    "S03"
+  ],
+  "createdAt": {
+    "$date": "2025-06-07T15:38:38.505Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T22:05:53.996Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "68470a22e5b998a36a04aa38"
+  },
+  "courseCode": "LAB101",
+  "courseName": "Intro to Lab Work",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "type": "lab",
+      "day": "Monday",
+      "timeStart": "07:15",
+      "timeEnd": "07:30",
+      "room": "Lab A1",
+      "_id": {
+        "$oid": "68470a22e5b998a36a04aa39"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T16:21:54.115Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:21:54.115Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68470b23e5b998a36a04aab2"
+  },
+  "courseCode": "TEST101",
+  "courseName": "Intro to TEST Work",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "type": "lab",
+      "day": "Monday",
+      "timeStart": "19:15",
+      "timeEnd": "19:30",
+      "room": "A101",
+      "_id": {
+        "$oid": "68470b23e5b998a36a04aab3"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T16:26:11.916Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:26:11.916Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68470efea701dba1060d23cc"
+  },
+  "courseCode": "TEST1",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lab",
+      "day": "Monday",
+      "timeStart": "19:45",
+      "timeEnd": "19:50",
+      "room": "A101",
+      "_id": {
+        "$oid": "68470efea701dba1060d23cd"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T16:42:38.087Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:42:38.087Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684710fb4c242b8200852d94"
+  },
+  "courseCode": "TEST21",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Computer Science",
+  "timings": [
+    {
+      "type": "lab",
+      "day": "Monday",
+      "timeStart": "19:45",
+      "timeEnd": "19:50",
+      "room": "A101",
+      "_id": {
+        "$oid": "684710fb4c242b8200852d95"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T16:51:07.181Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:51:07.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847111c4c242b8200852da8"
+  },
+  "courseCode": "TEST211",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lab",
+      "day": "Monday",
+      "timeStart": "19:53",
+      "timeEnd": "19:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "6847111c4c242b8200852da9"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T16:51:40.736Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T16:51:40.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684713ca5f4c83c7c1021363"
+  },
+  "courseCode": "TEST090",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "20:04",
+      "timeEnd": "20:05",
+      "room": "A101",
+      "_id": {
+        "$oid": "684713ca5f4c83c7c1021364"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T17:03:06.741Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T14:53:52.938Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "684716a31c846583bfa0bad4"
+  },
+  "courseCode": "TEST90",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "20:16",
+      "timeEnd": "20:17",
+      "room": "A101",
+      "_id": {
+        "$oid": "684716a31c846583bfa0bad5"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T17:15:15.193Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T17:15:15.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684719746eb28cbebd4d46c9"
+  },
+  "courseCode": "TEST9",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "20:28",
+      "timeEnd": "20:29",
+      "room": "A101",
+      "_id": {
+        "$oid": "684719746eb28cbebd4d46ca"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T17:27:16.909Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T17:27:16.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68473e23f1fabcbe152c82fe"
+  },
+  "courseCode": "TEST91",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:05",
+      "timeEnd": "23:08",
+      "room": "A101",
+      "_id": {
+        "$oid": "68473e23f1fabcbe152c82ff"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:03:47.909Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:03:47.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474054627b4abb591f2640"
+  },
+  "courseCode": "TEST84",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:14",
+      "timeEnd": "23:16",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474054627b4abb591f2641"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:13:08.149Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:13:08.149Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847408a627b4abb591f2686"
+  },
+  "courseCode": "TEST844",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:17",
+      "timeEnd": "23:19",
+      "room": "A101",
+      "_id": {
+        "$oid": "6847408a627b4abb591f2687"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:14:02.668Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:14:02.668Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684742851ba5337f9a6869f7"
+  },
+  "courseCode": "TEST44",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:24",
+      "timeEnd": "23:26",
+      "room": "A101",
+      "_id": {
+        "$oid": "684742851ba5337f9a6869f8"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [],
+  "createdAt": {
+    "$date": "2025-06-09T20:22:29.751Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T14:53:30.796Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "684743f51ba5337f9a686eb9"
+  },
+  "courseCode": "TEST144",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:29",
+      "timeEnd": "23:31",
+      "room": "A101",
+      "_id": {
+        "$oid": "684743f51ba5337f9a686eba"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:28:37.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:28:37.377Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474580edbc1a59149b43e3"
+  },
+  "courseCode": "TEST644",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:35",
+      "timeEnd": "23:38",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474580edbc1a59149b43e4"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:35:12.003Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:35:12.003Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474643edbc1a59149b460c"
+  },
+  "courseCode": "TEST044",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:38",
+      "timeEnd": "23:40",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474643edbc1a59149b460d"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:38:27.050Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:38:27.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474a63edbc1a59149b4cd7"
+  },
+  "courseCode": "TESTL44",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:55",
+      "timeEnd": "00:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474a63edbc1a59149b4cd8"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T20:56:03.053Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T20:56:03.053Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474b69edbc1a59149b4fe1"
+  },
+  "courseCode": "Dent101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "23:55",
+      "timeEnd": "00:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474b69edbc1a59149b4fe2"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T21:00:25.931Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T21:00:25.931Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474c79023931c05a6403da"
+  },
+  "courseCode": "Dents101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "0:04",
+      "timeEnd": "00:08",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474c79023931c05a6403db"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T21:04:57.621Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T21:04:57.621Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68474cb8023931c05a6404a2"
+  },
+  "courseCode": "Dentas101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Tuesday",
+      "timeStart": "0:06",
+      "timeEnd": "00:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "68474cb8023931c05a6404a3"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T21:06:00.330Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T21:06:00.330Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475ab7d9a3dc75c95bd3d9"
+  },
+  "courseCode": "Dentaas101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "01:08",
+      "timeEnd": "01:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "68475ab7d9a3dc75c95bd3da"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T22:05:43.910Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T22:05:43.910Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475ad7d9a3dc75c95bd5e4"
+  },
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Tuesday",
+      "timeStart": "01:08",
+      "timeEnd": "01:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "68475ad7d9a3dc75c95bd5e5"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-09T22:06:15.180Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-09T22:06:15.180Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848b236fc81e48fa375f202"
+  },
+  "courseCode": "Dentamasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednsday",
+      "timeStart": "01:08",
+      "timeEnd": "03:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848b236fc81e48fa375f203"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T22:31:18.742Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T22:31:18.742Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848b27ffc81e48fa375f35c"
+  },
+  "courseCode": "Dentafmasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "01:08",
+      "timeEnd": "03:55",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848b27ffc81e48fa375f35d"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T22:32:31.892Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T22:32:31.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848b557d9b46089d3602e96"
+  },
+  "courseCode": "Dentafmaasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "01:45",
+      "timeEnd": "01:47",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848b557d9b46089d3602e97"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T22:44:39.194Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T22:44:39.194Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848bd498e591453b73ab9ca"
+  },
+  "courseCode": "Dentafmfagasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "02:18",
+      "timeEnd": "02:19",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848bd498e591453b73ab9cb"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T23:18:33.756Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T23:18:33.756Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c24b3671dccb8ac631a5"
+  },
+  "courseCode": "Dentafmfdagasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "02:40",
+      "timeEnd": "02:41",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848c24b3671dccb8ac631a6"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T23:39:55.703Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T23:39:55.703Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c25f3671dccb8ac63286"
+  },
+  "courseCode": "Dentafmffdagasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "02:40",
+      "timeEnd": "02:41",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848c25f3671dccb8ac63287"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T23:40:15.312Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T23:40:15.312Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c49b3671dccb8ac63cb4"
+  },
+  "courseCode": "Dentaftmffdagasa101",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "02:49",
+      "timeEnd": "02:51",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848c49b3671dccb8ac63cb5"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T23:49:47.691Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T23:49:47.691Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c6a3b785b1c36ef0437b"
+  },
+  "courseCode": "testt3ban",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "02:58",
+      "timeEnd": "02:59",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848c6a3b785b1c36ef0437c"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-10T23:58:27.131Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T23:58:27.131Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c7a52e0fbe7f15309304"
+  },
+  "courseCode": "testst3ban",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "03:02",
+      "timeEnd": "03:04",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848c7a52e0fbe7f15309305"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-11T00:02:45.736Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-11T00:02:45.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c7b62e0fbe7f153093ca"
+  },
+  "courseCode": "testst23ban",
+  "courseName": "Intro to TEST Dent",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Wednesday",
+      "timeStart": "03:03",
+      "timeEnd": "03:05",
+      "room": "A101",
+      "_id": {
+        "$oid": "6848c7b62e0fbe7f153093cb"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-11T00:03:02.209Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-11T00:03:02.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685181bb4fbaa803e00e7fc3"
+  },
+  "courseCode": "NewToTest",
+  "courseName": "Tester",
+  "faculty": "Dentistry",
+  "timings": [
+    {
+      "type": "lecture",
+      "day": "Monday",
+      "timeStart": "18:58",
+      "timeEnd": "23:59",
+      "room": "A102",
+      "_id": {
+        "$oid": "685182bd4fbaa803e00e829b"
+      }
+    }
+  ],
+  "teachers": [
+    "T01"
+  ],
+  "students": [
+    "S02"
+  ],
+  "createdAt": {
+    "$date": "2025-06-17T14:54:51.563Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-17T14:59:09.329Z"
+  },
+  "__v": 1
+}]
