@@ -34,6 +34,18 @@ year: {
 
     walletID: { type: mongoose.Schema.Types.ObjectId, ref: 'Wallet', required: false },  // This will store the user's wallet
 
+    items: [
+      {
+        name: String,
+        quantity: Number,
+        sold: { type: Number, default: 0 },
+        costPrice: Number,
+        sellingPrice: Number,
+        category: String,
+        imageUrl: String
+      }
+    ],
+    
     
     role: {
       type: String,

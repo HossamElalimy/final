@@ -30,6 +30,10 @@ import ParentAttendancePage from "./components/parent/ParentAttendancePage";
 import ParentTransactionsPage from "./components/parent/ParentTransactionsPage";
 import FundWalletPage from "./components/parent/FundWalletPage";
 import ParentStudentPredictions from "./components/parent/ParentStudentPredictions";
+import MerchantHome from "./components/merchant/MerchantHome";
+import MerchantLayout from "./components/merchant/MerchantLayout";
+import MerchantItems from "./components/merchant/MerchantItems";
+
 
 
 function App() {
@@ -69,10 +73,18 @@ function App() {
 <Route path="/parent" element={<ParentLayout />}>
   <Route path="home" element={<ParentHome />} />
   <Route path="fund-wallet" element={<FundWalletPage />} />
+  <Route path="/parent/predictions" element={<ParentStudentPredictions />} />
 </Route>
 <Route path="/parent/attendance/:studentId/:studentName" element={<ParentAttendancePage />} />
 <Route path="/parent/transactions/:studentId/:studentName" element={<ParentTransactionsPage />} />
-<Route path="/parent/predictions" element={<ParentStudentPredictions />} />
+
+<Route path="/merchant" element={<MerchantLayout />}>
+  <Route path="home" element={<MerchantHome />} />
+  <Route path="items" element={<MerchantItems />} />
+
+</Route>
+
+
 
       </Routes>
       <ToastContainer position="bottom-right" autoClose={2000} hideProgressBar />

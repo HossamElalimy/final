@@ -88,6 +88,8 @@ app.use("/api/parent", parentRoutes);
 
 const mlRoutes = require("./routes/ml");
 app.use("/api/ml", mlRoutes);
+app.use("/api/merchant-items", require("./routes/merchantItems"));
+
 
 
 // MongoDB connect and cron job
