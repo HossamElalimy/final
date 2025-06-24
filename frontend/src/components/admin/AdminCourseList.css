@@ -1,0 +1,37 @@
+.btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+
+  .btn-sm {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    min-width: 110px; /* Ensures all buttons have the same width */
+    text-align: center;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    border: none;
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: black;
+  }
+  
+  .btn-primary {
+    background-color: #4e73df;
+    border: none;
+    color: white;
+  }
+  

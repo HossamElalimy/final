@@ -1,0 +1,14 @@
+{
+  "name": "rfid-attendance-system",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "dependencies": {
+    "chart.js": "^4.4.9",
+    "react-chartjs-2": "^5.3.0",
+    "react-toastify": "^11.0.5",
+    "rfid-attendance-system": "file:"
+  }
+}

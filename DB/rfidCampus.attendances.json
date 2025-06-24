@@ -1,0 +1,2136 @@
+[{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55a7"
+  },
+  "studentId": "S02",
+  "courseCode": "Dent101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55aa"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaas101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.204Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55ad"
+  },
+  "studentId": "S02",
+  "courseCode": "Dents101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.205Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55b0"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST044",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55b3"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST090",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.208Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55b6"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST1",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55b9"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST144",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55bc"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST211",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.212Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55bf"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST44",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.213Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55c2"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST644",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.214Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55c5"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST84",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55c8"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST844",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.217Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55cb"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST9",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55ce"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST90",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.219Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55d1"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST91",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.220Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d7a82574fa9709c55d4"
+  },
+  "studentId": "S02",
+  "courseCode": "TESTL44",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:17:30.222Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed32"
+  },
+  "studentId": "S02",
+  "courseCode": "Dent101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.204Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed35"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaas101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.212Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed38"
+  },
+  "studentId": "S02",
+  "courseCode": "Dents101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.214Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed3b"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST044",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.216Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed3e"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST090",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.219Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed41"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST1",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.221Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed44"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST144",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.223Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed47"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST211",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed4a"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST44",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.226Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed4d"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST644",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.228Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed50"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST84",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.230Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed53"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST844",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.231Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed56"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST9",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.233Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed59"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST90",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.235Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed5c"
+  },
+  "studentId": "S02",
+  "courseCode": "TEST91",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.236Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475d98b9067abdf022ed5f"
+  },
+  "studentId": "S02",
+  "courseCode": "TESTL44",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-09",
+  "status": "Absent",
+  "timestamp": {
+    "$date": "2025-06-09T22:18:00.238Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475fb469d210c129fcdf58"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-09",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:26:18.428Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-09T22:27:00.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68475ff069d210c129fce036"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-09",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:27:09.579Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-09T22:28:00.034Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847602c69d210c129fce14e"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-09",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:28:06.459Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-09T22:29:00.022Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684760e0fb7091f168af85dd"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-09",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:31:09.175Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-09T22:32:00.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6847620c925fb9f4d611d8f3"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-09",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:36:50.370Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-09T22:37:00.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684762c0925fb9f4d611dbe4"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-09",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:39:30.386Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-09T22:40:00.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684766444f25366adee01a32"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Tuesday",
+  "date": "2025-06-10",
+  "status": "Late",
+  "loginTime": {
+    "$date": "2025-06-09T22:53:01.769Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-09T22:54:42.060Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-09T22:55:00.040Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848b5e4d9b46089d3603118"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentafmaasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Attended",
+  "loginTime": {
+    "$date": "2025-06-10T22:45:16.338Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-10T22:45:19.017Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-10T22:47:00.037Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848bd648e591453b73ababe"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentafmfagasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Attended",
+  "loginTime": {
+    "$date": "2025-06-10T23:18:37.511Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-10T23:18:38.909Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-10T23:19:00.044Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c28c3671dccb8ac6336a"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentafmfdagasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-10T23:40:06.866Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-10T23:41:00.037Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c28c3671dccb8ac63391"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentafmffdagasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-10T23:40:20.874Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-10T23:40:25.578Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-10T23:41:00.052Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c4e43671dccb8ac63e1f"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaftmffdagasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-10T23:49:52.281Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-10T23:49:54.256Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-10T23:51:00.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c700b785b1c36ef04531"
+  },
+  "studentId": "S02",
+  "courseCode": "testt3ban",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-10T23:58:31.494Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-11T00:00:00.027Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c82c2e0fbe7f1530958b"
+  },
+  "studentId": "S02",
+  "courseCode": "testst3ban",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-11T00:02:49.888Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-11T00:05:00.040Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6848c86864657afa1232477e"
+  },
+  "studentId": "S02",
+  "courseCode": "testst23ban",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-11T00:03:07.431Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-11T00:03:09.622Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-11T00:06:00.048Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684b07cc0e9a952bbdab42e9"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentafmasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-11",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-11T00:11:00.181Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-12T17:01:00.064Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684f4f80df1adcc57cc8c183"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentaas101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Monday",
+  "date": "2025-06-16",
+  "status": "Attended",
+  "loginTime": {
+    "$date": "2025-06-15T22:11:50.074Z"
+  },
+  "logoutTime": null,
+  "timestamp": {
+    "$date": "2025-06-15T22:56:00.033Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68520ea026b72446e98bb4d8"
+  },
+  "studentId": "S02",
+  "courseCode": "Dentafmasa101",
+  "courseName": "Intro to TEST Dent",
+  "day": "Wednesday",
+  "date": "2025-06-18",
+  "status": "Absent",
+  "loginTime": {
+    "$date": "2025-06-17T22:39:40.712Z"
+  },
+  "logoutTime": {
+    "$date": "2025-06-17T22:40:27.568Z"
+  },
+  "timestamp": {
+    "$date": "2025-06-18T00:56:00.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e544f"
+  },
+  "studentId": "S17",
+  "courseCode": "CSE198",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "loginTime": "08:05",
+  "logoutTime": "00:15"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5450"
+  },
+  "studentId": "S24",
+  "courseCode": "CSE113",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-30T00:00:00.000Z"
+  },
+  "loginTime": "07:57",
+  "logoutTime": "04:47"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5451"
+  },
+  "studentId": "S05",
+  "courseCode": "CSE171",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  },
+  "loginTime": "15:37",
+  "logoutTime": "10:59"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5452"
+  },
+  "studentId": "S12",
+  "courseCode": "CSE146",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "22:26",
+  "logoutTime": "16:01"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5453"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE149",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "loginTime": "01:08",
+  "logoutTime": "02:04"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5454"
+  },
+  "studentId": "S19",
+  "courseCode": "CSE171",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-16T00:00:00.000Z"
+  },
+  "loginTime": "23:53",
+  "logoutTime": "19:20"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5455"
+  },
+  "studentId": "S22",
+  "courseCode": "CSE196",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-03T00:00:00.000Z"
+  },
+  "loginTime": "22:56",
+  "logoutTime": "17:18"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5456"
+  },
+  "studentId": "S21",
+  "courseCode": "CSE173",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "18:51",
+  "logoutTime": "17:48"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5457"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE108",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-11T00:00:00.000Z"
+  },
+  "loginTime": "16:13",
+  "logoutTime": "15:41"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5458"
+  },
+  "studentId": "S26",
+  "courseCode": "CSE161",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "loginTime": "06:15",
+  "logoutTime": "13:02"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5459"
+  },
+  "studentId": "S14",
+  "courseCode": "CSE147",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "23:07",
+  "logoutTime": "09:18"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e545a"
+  },
+  "studentId": "S21",
+  "courseCode": "CSE196",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-19T00:00:00.000Z"
+  },
+  "loginTime": "22:30",
+  "logoutTime": "08:44"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e545b"
+  },
+  "studentId": "S23",
+  "courseCode": "CSE114",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-14T00:00:00.000Z"
+  },
+  "loginTime": "06:44",
+  "logoutTime": "08:12"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e545c"
+  },
+  "studentId": "S21",
+  "courseCode": "CSE113",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-05T00:00:00.000Z"
+  },
+  "loginTime": "21:46",
+  "logoutTime": "15:39"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e545d"
+  },
+  "studentId": "S08",
+  "courseCode": "CSE192",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-05T00:00:00.000Z"
+  },
+  "loginTime": "13:20",
+  "logoutTime": "23:39"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e545e"
+  },
+  "studentId": "S28",
+  "courseCode": "CSE156",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-04T00:00:00.000Z"
+  },
+  "loginTime": "18:30",
+  "logoutTime": "02:27"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e545f"
+  },
+  "studentId": "S13",
+  "courseCode": "CSE163",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "loginTime": "22:51",
+  "logoutTime": "11:02"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5460"
+  },
+  "studentId": "S23",
+  "courseCode": "CSE117",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-06T00:00:00.000Z"
+  },
+  "loginTime": "23:12",
+  "logoutTime": "09:20"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5461"
+  },
+  "studentId": "S29",
+  "courseCode": "CSE132",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "loginTime": "03:47",
+  "logoutTime": "21:37"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5462"
+  },
+  "studentId": "S16",
+  "courseCode": "CSE180",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "loginTime": "11:08",
+  "logoutTime": "07:15"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5463"
+  },
+  "studentId": "S12",
+  "courseCode": "CSE170",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-30T00:00:00.000Z"
+  },
+  "loginTime": "02:54",
+  "logoutTime": "20:50"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5464"
+  },
+  "studentId": "S25",
+  "courseCode": "CSE137",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "16:48",
+  "logoutTime": "05:36"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5465"
+  },
+  "studentId": "S16",
+  "courseCode": "CSE155",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "loginTime": "01:41",
+  "logoutTime": "17:33"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5466"
+  },
+  "studentId": "S09",
+  "courseCode": "CSE131",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  },
+  "loginTime": "03:29",
+  "logoutTime": "20:13"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5467"
+  },
+  "studentId": "S20",
+  "courseCode": "CSE199",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-20T00:00:00.000Z"
+  },
+  "loginTime": "19:53",
+  "logoutTime": "08:09"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5468"
+  },
+  "studentId": "S11",
+  "courseCode": "CSE135",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "04:07",
+  "logoutTime": "04:53"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5469"
+  },
+  "studentId": "S12",
+  "courseCode": "CSE151",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "02:03",
+  "logoutTime": "18:24"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e546a"
+  },
+  "studentId": "S05",
+  "courseCode": "CSE191",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-24T00:00:00.000Z"
+  },
+  "loginTime": "22:31",
+  "logoutTime": "10:51"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e546b"
+  },
+  "studentId": "S11",
+  "courseCode": "CSE129",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-27T00:00:00.000Z"
+  },
+  "loginTime": "00:16",
+  "logoutTime": "03:20"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e546c"
+  },
+  "studentId": "S24",
+  "courseCode": "CSE178",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-21T00:00:00.000Z"
+  },
+  "loginTime": "20:59",
+  "logoutTime": "04:41"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e546d"
+  },
+  "studentId": "S16",
+  "courseCode": "CSE171",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-14T00:00:00.000Z"
+  },
+  "loginTime": "17:12",
+  "logoutTime": "07:14"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e546e"
+  },
+  "studentId": "S05",
+  "courseCode": "CSE115",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "loginTime": "23:07",
+  "logoutTime": "01:40"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e546f"
+  },
+  "studentId": "S09",
+  "courseCode": "CSE199",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-04T00:00:00.000Z"
+  },
+  "loginTime": "19:05",
+  "logoutTime": "12:55"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5470"
+  },
+  "studentId": "S24",
+  "courseCode": "CSE164",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "01:41",
+  "logoutTime": "17:24"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5471"
+  },
+  "studentId": "S15",
+  "courseCode": "CSE196",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-06T00:00:00.000Z"
+  },
+  "loginTime": "04:50",
+  "logoutTime": "14:19"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5472"
+  },
+  "studentId": "S19",
+  "courseCode": "CSE151",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-07T00:00:00.000Z"
+  },
+  "loginTime": "17:29",
+  "logoutTime": "11:54"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5473"
+  },
+  "studentId": "S17",
+  "courseCode": "CSE143",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-27T00:00:00.000Z"
+  },
+  "loginTime": "01:11",
+  "logoutTime": "19:36"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5474"
+  },
+  "studentId": "S11",
+  "courseCode": "CSE130",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-02T00:00:00.000Z"
+  },
+  "loginTime": "23:47",
+  "logoutTime": "14:56"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5475"
+  },
+  "studentId": "S02",
+  "courseCode": "CSE104",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-13T00:00:00.000Z"
+  },
+  "loginTime": "02:35",
+  "logoutTime": "20:18"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5476"
+  },
+  "studentId": "S21",
+  "courseCode": "CSE140",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "16:42",
+  "logoutTime": "05:52"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5477"
+  },
+  "studentId": "S19",
+  "courseCode": "CSE189",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "12:56",
+  "logoutTime": "02:11"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5478"
+  },
+  "studentId": "S04",
+  "courseCode": "CSE135",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-30T00:00:00.000Z"
+  },
+  "loginTime": "20:14",
+  "logoutTime": "05:52"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5479"
+  },
+  "studentId": "S10",
+  "courseCode": "CSE187",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-05T00:00:00.000Z"
+  },
+  "loginTime": "11:44",
+  "logoutTime": "14:04"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e547a"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE188",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-24T00:00:00.000Z"
+  },
+  "loginTime": "20:12",
+  "logoutTime": "11:47"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e547b"
+  },
+  "studentId": "S05",
+  "courseCode": "CSE169",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-03T00:00:00.000Z"
+  },
+  "loginTime": "17:10",
+  "logoutTime": "18:26"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e547c"
+  },
+  "studentId": "S05",
+  "courseCode": "CSE190",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "23:25",
+  "logoutTime": "07:28"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e547d"
+  },
+  "studentId": "S17",
+  "courseCode": "CSE112",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "19:09",
+  "logoutTime": "00:28"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e547e"
+  },
+  "studentId": "S22",
+  "courseCode": "CSE137",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  },
+  "loginTime": "09:07",
+  "logoutTime": "07:55"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e547f"
+  },
+  "studentId": "S29",
+  "courseCode": "CSE115",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "22:36",
+  "logoutTime": "03:37"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5480"
+  },
+  "studentId": "S19",
+  "courseCode": "CSE108",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-16T00:00:00.000Z"
+  },
+  "loginTime": "08:36",
+  "logoutTime": "13:19"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5481"
+  },
+  "studentId": "S07",
+  "courseCode": "CSE193",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-24T00:00:00.000Z"
+  },
+  "loginTime": "23:19",
+  "logoutTime": "14:56"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5482"
+  },
+  "studentId": "S13",
+  "courseCode": "CSE149",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-19T00:00:00.000Z"
+  },
+  "loginTime": "04:41",
+  "logoutTime": "01:05"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5483"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE172",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-06T00:00:00.000Z"
+  },
+  "loginTime": "11:39",
+  "logoutTime": "08:15"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5484"
+  },
+  "studentId": "S17",
+  "courseCode": "CSE138",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-26T00:00:00.000Z"
+  },
+  "loginTime": "04:35",
+  "logoutTime": "01:33"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5485"
+  },
+  "studentId": "S02",
+  "courseCode": "CSE155",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-07T00:00:00.000Z"
+  },
+  "loginTime": "00:58",
+  "logoutTime": "00:06"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5486"
+  },
+  "studentId": "S30",
+  "courseCode": "CSE191",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "loginTime": "23:52",
+  "logoutTime": "11:39"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5487"
+  },
+  "studentId": "S25",
+  "courseCode": "CSE175",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-12T00:00:00.000Z"
+  },
+  "loginTime": "00:52",
+  "logoutTime": "03:07"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5488"
+  },
+  "studentId": "S29",
+  "courseCode": "CSE131",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-23T00:00:00.000Z"
+  },
+  "loginTime": "08:59",
+  "logoutTime": "13:28"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5489"
+  },
+  "studentId": "S23",
+  "courseCode": "CSE180",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-12T00:00:00.000Z"
+  },
+  "loginTime": "13:10",
+  "logoutTime": "18:18"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e548a"
+  },
+  "studentId": "S22",
+  "courseCode": "CSE106",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-04T00:00:00.000Z"
+  },
+  "loginTime": "16:00",
+  "logoutTime": "20:16"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e548b"
+  },
+  "studentId": "S02",
+  "courseCode": "CSE189",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-28T00:00:00.000Z"
+  },
+  "loginTime": "13:19",
+  "logoutTime": "05:56"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e548c"
+  },
+  "studentId": "S16",
+  "courseCode": "CSE164",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-17T00:00:00.000Z"
+  },
+  "loginTime": "07:56",
+  "logoutTime": "02:10"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e548d"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE138",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-03T00:00:00.000Z"
+  },
+  "loginTime": "21:08",
+  "logoutTime": "10:39"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e548e"
+  },
+  "studentId": "S06",
+  "courseCode": "CSE147",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "loginTime": "20:50",
+  "logoutTime": "01:36"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e548f"
+  },
+  "studentId": "S01",
+  "courseCode": "CSE134",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "loginTime": "03:47",
+  "logoutTime": "04:49"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5490"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE133",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-06T00:00:00.000Z"
+  },
+  "loginTime": "14:27",
+  "logoutTime": "08:33"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5491"
+  },
+  "studentId": "S02",
+  "courseCode": "CSE199",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-21T00:00:00.000Z"
+  },
+  "loginTime": "19:05",
+  "logoutTime": "12:28"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5492"
+  },
+  "studentId": "S20",
+  "courseCode": "CSE153",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-31T00:00:00.000Z"
+  },
+  "loginTime": "01:46",
+  "logoutTime": "03:36"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5493"
+  },
+  "studentId": "S29",
+  "courseCode": "CSE183",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  },
+  "loginTime": "17:51",
+  "logoutTime": "14:08"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5494"
+  },
+  "studentId": "S04",
+  "courseCode": "CSE125",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-14T00:00:00.000Z"
+  },
+  "loginTime": "01:57",
+  "logoutTime": "09:16"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5495"
+  },
+  "studentId": "S23",
+  "courseCode": "CSE156",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-17T00:00:00.000Z"
+  },
+  "loginTime": "17:45",
+  "logoutTime": "03:51"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5496"
+  },
+  "studentId": "S20",
+  "courseCode": "CSE130",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-19T00:00:00.000Z"
+  },
+  "loginTime": "08:14",
+  "logoutTime": "21:27"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5497"
+  },
+  "studentId": "S22",
+  "courseCode": "CSE133",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-15T00:00:00.000Z"
+  },
+  "loginTime": "22:34",
+  "logoutTime": "12:30"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5498"
+  },
+  "studentId": "S14",
+  "courseCode": "CSE107",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-15T00:00:00.000Z"
+  },
+  "loginTime": "00:53",
+  "logoutTime": "11:04"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e5499"
+  },
+  "studentId": "S18",
+  "courseCode": "CSE160",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  },
+  "loginTime": "16:08",
+  "logoutTime": "02:26"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e549a"
+  },
+  "studentId": "S11",
+  "courseCode": "CSE177",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-23T00:00:00.000Z"
+  },
+  "loginTime": "07:20",
+  "logoutTime": "14:31"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e549b"
+  },
+  "studentId": "S26",
+  "courseCode": "CSE182",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-29T00:00:00.000Z"
+  },
+  "loginTime": "05:21",
+  "logoutTime": "23:48"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e549c"
+  },
+  "studentId": "S11",
+  "courseCode": "CSE140",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-13T00:00:00.000Z"
+  },
+  "loginTime": "02:29",
+  "logoutTime": "09:23"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e549d"
+  },
+  "studentId": "S23",
+  "courseCode": "CSE142",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-23T00:00:00.000Z"
+  },
+  "loginTime": "10:25",
+  "logoutTime": "06:03"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e549e"
+  },
+  "studentId": "S25",
+  "courseCode": "CSE186",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-21T00:00:00.000Z"
+  },
+  "loginTime": "17:19",
+  "logoutTime": "05:15"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e549f"
+  },
+  "studentId": "S25",
+  "courseCode": "CSE131",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  },
+  "loginTime": "16:05",
+  "logoutTime": "19:18"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a0"
+  },
+  "studentId": "S04",
+  "courseCode": "CSE171",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-27T00:00:00.000Z"
+  },
+  "loginTime": "21:20",
+  "logoutTime": "21:04"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a1"
+  },
+  "studentId": "S13",
+  "courseCode": "CSE169",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-27T00:00:00.000Z"
+  },
+  "loginTime": "21:12",
+  "logoutTime": "15:35"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a2"
+  },
+  "studentId": "S17",
+  "courseCode": "CSE141",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-03T00:00:00.000Z"
+  },
+  "loginTime": "21:08",
+  "logoutTime": "05:07"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a3"
+  },
+  "studentId": "S30",
+  "courseCode": "CSE184",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-21T00:00:00.000Z"
+  },
+  "loginTime": "23:49",
+  "logoutTime": "21:12"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a4"
+  },
+  "studentId": "S15",
+  "courseCode": "CSE163",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "08:44",
+  "logoutTime": "16:53"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a5"
+  },
+  "studentId": "S16",
+  "courseCode": "CSE157",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-09T00:00:00.000Z"
+  },
+  "loginTime": "01:36",
+  "logoutTime": "21:35"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a6"
+  },
+  "studentId": "S22",
+  "courseCode": "CSE143",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-07T00:00:00.000Z"
+  },
+  "loginTime": "14:18",
+  "logoutTime": "00:18"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a7"
+  },
+  "studentId": "S10",
+  "courseCode": "CSE145",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-23T00:00:00.000Z"
+  },
+  "loginTime": "05:31",
+  "logoutTime": "09:35"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a8"
+  },
+  "studentId": "S08",
+  "courseCode": "CSE129",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-30T00:00:00.000Z"
+  },
+  "loginTime": "14:55",
+  "logoutTime": "22:03"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54a9"
+  },
+  "studentId": "S23",
+  "courseCode": "CSE111",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-04T00:00:00.000Z"
+  },
+  "loginTime": "04:45",
+  "logoutTime": "14:29"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54aa"
+  },
+  "studentId": "S29",
+  "courseCode": "CSE139",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-23T00:00:00.000Z"
+  },
+  "loginTime": "18:38",
+  "logoutTime": "12:41"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54ab"
+  },
+  "studentId": "S11",
+  "courseCode": "CSE100",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-25T00:00:00.000Z"
+  },
+  "loginTime": "15:33",
+  "logoutTime": "21:55"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54ac"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE179",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-29T00:00:00.000Z"
+  },
+  "loginTime": "13:55",
+  "logoutTime": "08:27"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54ad"
+  },
+  "studentId": "S17",
+  "courseCode": "CSE197",
+  "status": "Late",
+  "date": {
+    "$date": "2025-05-29T00:00:00.000Z"
+  },
+  "loginTime": "04:58",
+  "logoutTime": "16:54"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54ae"
+  },
+  "studentId": "S01",
+  "courseCode": "CSE107",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-05-21T00:00:00.000Z"
+  },
+  "loginTime": "05:46",
+  "logoutTime": "12:51"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54af"
+  },
+  "studentId": "S04",
+  "courseCode": "CSE117",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-06-04T00:00:00.000Z"
+  },
+  "loginTime": "08:57",
+  "logoutTime": "16:20"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54b0"
+  },
+  "studentId": "S13",
+  "courseCode": "CSE190",
+  "status": "Attended",
+  "date": {
+    "$date": "2025-06-13T00:00:00.000Z"
+  },
+  "loginTime": "21:21",
+  "logoutTime": "04:47"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54b1"
+  },
+  "studentId": "S27",
+  "courseCode": "CSE159",
+  "status": "Late",
+  "date": {
+    "$date": "2025-06-16T00:00:00.000Z"
+  },
+  "loginTime": "01:13",
+  "logoutTime": "12:54"
+},
+{
+  "_id": {
+    "$oid": "6852164b3204600f652e54b2"
+  },
+  "studentId": "S18",
+  "courseCode": "CSE190",
+  "status": "Absent",
+  "date": {
+    "$date": "2025-05-30T00:00:00.000Z"
+  },
+  "loginTime": "23:51",
+  "logoutTime": "16:25"
+}]

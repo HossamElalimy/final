@@ -1,0 +1,70 @@
+.nav-link.active-highlight {
+    color: white !important;
+    font-size: 1.15rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-link {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    font-size: 1.05rem;
+  }
+  .sidebar-brand {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .sidebar-brand-text {
+    font-size: 1.1rem;
+  }
+  /* Center everything and add spacing */
+.sidebar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 0;
+    text-align: center;
+  }
+  
+  /* Icon circle background */
+  .sidebar-brand-icon-wrapper {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 0 10px rgba(78, 115, 223, 0.6);
+  }
+  
+  /* Animate with subtle bounce */
+  .animated-icon {
+    color: #ffffff;
+    animation: bounce 2s infinite;
+  }
+  
+  /* Panel text styling */
+  .sidebar-brand-text {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Keyframe for bounce */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+  .sidebar-nav-wrapper {
+    margin-top: 2.5rem; /* push down the list */
+  }
+  
