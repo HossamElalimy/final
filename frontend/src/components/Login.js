@@ -42,7 +42,9 @@ const Login = () => {
         navigate("/teacher/home");
       }else if (finalUser.role === "parent") {
         navigate("/parent/home");
-      } else {
+      } else if (finalUser.role === "merchant") {
+        navigate("/merchant/home");   // ✅ ADD THIS LINE
+      }else {
         navigate("/dashboard"); // fallback for unknown roles
       }
     } catch (err) {

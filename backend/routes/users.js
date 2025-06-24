@@ -39,7 +39,12 @@ router.post("/", async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     const userId = await generateUserId(role); // Generate ID based on role
-
+    if (role === "merchant") {
+      if (!merchantName || !merchantType) {
+        return res.status(400).json({ error: "Merchant Name and Type are required." });
+      }
+    }
+    
     let newUser;
     if (role === "merchant") {
       newUser = new User({
@@ -287,6 +292,32 @@ router.get("/suggest", async (req, res) => {
     { fullName: { $regex: query, $options: "i" } }
   ] }).limit(10);
   res.json(teachers.map((t) => `${t.fullName} (${t.userId})`));
+});
+// GET merchant items (from User model)
+router.get("/:userId/items", async (req, res) => {
+  try {
+    const user = await User.findOne({ userId: req.params.userId });
+    if (!user || user.role !== "merchant") {
+      return res.status(404).json({ error: "Merchant not found" });
+    }
+    res.json({ items: user.items || [] });
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch items" });
+  }
+});
+
+// PUT update merchant items (to User model)
+router.put("/:userId/items", async (req, res) => {
+  try {
+    const updated = await User.findOneAndUpdate(
+      { userId: req.params.userId, role: "merchant" },
+      { $set: { items: req.body.items } },
+      { new: true }
+    );
+    res.json(updated);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to update items" });
+  }
 });
 
 
