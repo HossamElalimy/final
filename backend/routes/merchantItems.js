@@ -5,7 +5,7 @@ const Transaction = require("../models/Transaction"); // Needed for summary rout
 
 
 
-router.get("/:userId", async (req, res) => {
+router.get("/details/:userId", async (req, res) => {
   try {
     const merchant = await User.findOne({ userId: req.params.userId, role: "merchant" });
     if (!merchant) return res.status(404).json({ error: "Merchant not found" });
@@ -32,18 +32,20 @@ router.post("/", async (req, res) => {
 });
 
 // Update items array
-router.put("/:userId/items", async (req, res) => {
+router.get("/:userId/items", async (req, res) => {
+  const { userId } = req.params;
   try {
-    const updated = await User.findOneAndUpdate(
-      { userId: req.params.userId, role: "merchant" },
-      { items: req.body.items },
-      { new: true }
-    );
-    res.json(updated);
+    const merchant = await User.findOne({ userId });
+    if (!merchant) return res.status(404).json({ error: "Merchant not found" });
+
+    res.json(merchant.items); // ✅ returns clean array
   } catch (err) {
-    res.status(500).json({ error: "Failed to update merchant items" });
+    console.error("❌ Error fetching merchant items:", err.message);
+    res.status(500).json({ error: "Server error" });
   }
 });
+
+
 
 
 
@@ -76,5 +78,30 @@ router.get("/summary/:userId", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch merchant summary" });
   }
 });
+
+
+// PUT: Update merchant items array
+router.put("/:userId/items", async (req, res) => {
+  const { userId } = req.params;
+  const { items } = req.body;
+
+  try {
+    const updatedMerchant = await User.findOneAndUpdate(
+      { userId, role: "merchant" },
+      { $set: { items } },
+      { new: true }
+    );
+
+    if (!updatedMerchant) {
+      return res.status(404).json({ error: "Merchant not found" });
+    }
+
+    res.json({ items: updatedMerchant.items });
+  } catch (err) {
+    console.error("❌ Failed to update merchant items:", err.message);
+    res.status(500).json({ error: "Failed to update items" });
+  }
+});
+
 
 module.exports = router;

@@ -320,6 +320,17 @@ router.put("/:userId/items", async (req, res) => {
   }
 });
 
-
+router.get("/merchants", async (req, res) => {
+  try {
+    const merchants = await User.find({
+      role: "merchant",
+      userId: { $regex: /^M/, $options: "i" }  // userId starts with 'M'
+    }).select("userId fullName merchantName merchantType");
+    res.json(merchants);
+  } catch (err) {
+    console.error("Error fetching merchants:", err);
+    res.status(500).json({ error: "Server error fetching merchants" });
+  }
+});
 
 module.exports = router;

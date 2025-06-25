@@ -1,10 +1,25 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import MerchantLayout from "./MerchantLayout";
+
+// Simple toaster component
+const Toaster = ({ message, type, onClose }) => {
+  if (!message) return null;
+  const bgColor = type === "error" ? "bg-danger" : "bg-success";
+  return (
+    <div className={`toast show position-fixed top-0 end-0 m-3 ${bgColor} text-white`} role="alert" aria-live="assertive" aria-atomic="true" style={{ zIndex: 1050 }}>
+      <div className="toast-header">
+        <strong className="me-auto">{type === "error" ? "Error" : "Success"}</strong>
+        <button type="button" className="btn-close btn-close-white" onClick={onClose}></button>
+      </div>
+      <div className="toast-body">{message}</div>
+    </div>
+  );
+};
 
 const MerchantItems = () => {
   const [merchant, setMerchant] = useState(null);
   const [items, setItems] = useState([]);
+  const user = JSON.parse(localStorage.getItem("user"));
   const [newItem, setNewItem] = useState({
     name: "",
     quantity: 0,
@@ -12,32 +27,33 @@ const MerchantItems = () => {
     costPrice: 0,
     sellingPrice: 0,
     category: "",
-    imageUrl: ""
   });
+  const [editIndex, setEditIndex] = useState(null); // index of item being edited
+  const [editItem, setEditItem] = useState(null);   // clone of the item being edited
+  const [toaster, setToaster] = useState({ message: "", type: "success" });
 
-  const handleChange = (field, value) => {
-    setNewItem((prev) => ({ ...prev, [field]: value }));
-  };
-
-  const handleFileUpload = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setNewItem((prev) => ({ ...prev, imageUrl: reader.result }));
-      };
-      reader.readAsDataURL(file);
-    }
-  };
+  const API_BASE = "http://localhost:5000/api/users";
 
   const fetchItems = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/users/search?query=${merchant.userId}&role=merchant`);
-      if (res.data.length > 0) {
-        setItems(res.data[0].items || []);
-      }
+      const res = await axios.get(`${API_BASE}/${user.userId}/items`);
+      setItems(res.data.items || []);
     } catch (err) {
-      console.error("❌ Failed to load items", err);
+      console.error("❌ Failed to fetch items:", err);
+      showToast("Failed to load items", "error");
+    }
+  };
+
+  const showToast = (message, type = "success") => {
+    setToaster({ message, type });
+    setTimeout(() => setToaster({ message: "", type }), 3000);
+  };
+
+  const handleChange = (field, value, isEdit = false) => {
+    if (isEdit) {
+      setEditItem((prev) => ({ ...prev, [field]: value }));
+    } else {
+      setNewItem((prev) => ({ ...prev, [field]: value }));
     }
   };
 
@@ -55,21 +71,13 @@ const MerchantItems = () => {
     const updatedItems = [...items, newItem];
 
     try {
-      const res = await axios.put(`http://localhost:5000/api/merchant-items/${merchant.userId}/items`, {
-        items: updatedItems
-      });
-      setItems(res.data.items || []);
-      setNewItem({
-        name: "",
-        quantity: 0,
-        sold: 0,
-        costPrice: 0,
-        sellingPrice: 0,
-        category: "",
-        imageUrl: ""
-      });
+      await axios.put(`${API_BASE}/${merchant.userId}/items`, { items: updatedItems });
+      setNewItem({ name: "", quantity: 0, sold: 0, costPrice: 0, sellingPrice: 0, category: "" });
+      fetchItems();
+      showToast("Item added successfully!");
     } catch (err) {
       console.error("Failed to add item:", err);
+      showToast("Failed to add item", "error");
     }
   };
 
@@ -78,13 +86,47 @@ const MerchantItems = () => {
 
     const updatedItems = [...items];
     updatedItems.splice(index, 1);
+
     try {
-      const res = await axios.put(`http://localhost:5000/api/merchant-items/${merchant.userId}/items`, {
-        items: updatedItems
-      });
-      setItems(res.data.items || []);
+      await axios.put(`${API_BASE}/${merchant.userId}/items`, { items: updatedItems });
+      fetchItems();
+      showToast("Item deleted successfully!");
     } catch (err) {
       console.error("Failed to delete item:", err);
+      showToast("Failed to delete item", "error");
+    }
+  };
+
+  // Start editing an item
+  const startEdit = (index) => {
+    setEditIndex(index);
+    setEditItem({ ...items[index] });
+  };
+
+  // Cancel editing
+  const cancelEdit = () => {
+    setEditIndex(null);
+    setEditItem(null);
+  };
+
+  // Save edited item
+  const saveEdit = async () => {
+    if (!editItem.name || !editItem.quantity || !editItem.costPrice || !editItem.sellingPrice) {
+      alert("Please fill all required fields");
+      return;
+    }
+    const updatedItems = [...items];
+    updatedItems[editIndex] = editItem;
+
+    try {
+      await axios.put(`${API_BASE}/${merchant.userId}/items`, { items: updatedItems });
+      fetchItems();
+      setEditIndex(null);
+      setEditItem(null);
+      showToast("Item updated successfully!");
+    } catch (err) {
+      console.error("Failed to update item:", err);
+      showToast("Failed to update item", "error");
     }
   };
 
@@ -97,8 +139,8 @@ const MerchantItems = () => {
   }, []);
 
   useEffect(() => {
-    if (merchant) fetchItems();
-  }, [merchant]);
+    fetchItems();
+  }, []);
 
   return (
     <div className="container-fluid py-4">
@@ -129,15 +171,6 @@ const MerchantItems = () => {
             <input className="form-control" value={newItem.category} onChange={(e) => handleChange("category", e.target.value)} />
           </div>
           <div className="col-md-2">
-            <label className="form-label">Image</label>
-            <input type="file" className="form-control" accept="image/*" onChange={handleFileUpload} />
-          </div>
-          {newItem.imageUrl && (
-            <div className="col-md-12">
-              <img src={newItem.imageUrl} alt="Preview" style={{ height: "100px", marginTop: "10px" }} />
-            </div>
-          )}
-          <div className="col-md-2">
             <label className="form-label invisible">Add</label>
             <button className="btn btn-success w-100" onClick={handleAddItem}>➕ Add</button>
           </div>
@@ -148,7 +181,7 @@ const MerchantItems = () => {
       <div className="card p-3">
         <h5 className="fw-bold mb-3">Item List</h5>
         <div className="table-responsive">
-          <table className="table table-striped table-hover">
+          <table className="table table-striped table-hover align-middle">
             <thead className="table-light">
               <tr>
                 <th>#</th>
@@ -162,18 +195,74 @@ const MerchantItems = () => {
             </thead>
             <tbody>
               {items.length === 0 ? (
-                <tr><td colSpan="7" className="text-center">No items found.</td></tr>
+                <tr>
+                  <td colSpan="7" className="text-center">No items found.</td>
+                </tr>
               ) : (
                 items.map((item, i) => (
                   <tr key={i}>
                     <td>{i + 1}</td>
-                    <td>{item.name}</td>
-                    <td>{item.quantity}</td>
-                    <td>{item.sold}</td>
-                    <td>EGP {item.costPrice}</td>
-                    <td>EGP {item.sellingPrice}</td>
                     <td>
-                      <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(i)}>🗑</button>
+                      {editIndex === i ? (
+                        <input
+                          type="text"
+                          className="form-control"
+                          value={editItem.name}
+                          onChange={(e) => handleChange("name", e.target.value, true)}
+                        />
+                      ) : (
+                        item.name
+                      )}
+                    </td>
+                    <td>
+                      {editIndex === i ? (
+                        <input
+                          type="number"
+                          className="form-control"
+                          value={editItem.quantity}
+                          onChange={(e) => handleChange("quantity", Number(e.target.value), true)}
+                        />
+                      ) : (
+                        item.quantity
+                      )}
+                    </td>
+                    <td>{item.sold}</td>
+                    <td>
+                      {editIndex === i ? (
+                        <input
+                          type="number"
+                          className="form-control"
+                          value={editItem.costPrice}
+                          onChange={(e) => handleChange("costPrice", Number(e.target.value), true)}
+                        />
+                      ) : (
+                        `EGP ${item.costPrice}`
+                      )}
+                    </td>
+                    <td>
+                      {editIndex === i ? (
+                        <input
+                          type="number"
+                          className="form-control"
+                          value={editItem.sellingPrice}
+                          onChange={(e) => handleChange("sellingPrice", Number(e.target.value), true)}
+                        />
+                      ) : (
+                        `EGP ${item.sellingPrice}`
+                      )}
+                    </td>
+                    <td>
+                      {editIndex === i ? (
+                        <>
+                          <button className="btn btn-sm btn-success me-2" onClick={saveEdit}>💾 Save</button>
+                          <button className="btn btn-sm btn-secondary" onClick={cancelEdit}>❌ Cancel</button>
+                        </>
+                      ) : (
+                        <>
+                          <button className="btn btn-sm btn-outline-primary me-2" onClick={() => startEdit(i)}>✏️ Edit</button>
+                          <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(i)}>🗑</button>
+                        </>
+                      )}
                     </td>
                   </tr>
                 ))
@@ -182,6 +271,8 @@ const MerchantItems = () => {
           </table>
         </div>
       </div>
+
+      <Toaster message={toaster.message} type={toaster.type} onClose={() => setToaster({ message: "", type: "success" })} />
     </div>
   );
 };
