@@ -1,51 +1,78 @@
+const User = require("../models/User");
 const Wallet = require("../models/Wallet");
 const Transaction = require("../models/Transaction");
-const User = require("../models/User");
 
-exports.getMerchantSummary = async (req, res) => {
+const getMerchantSummary = async (req, res) => {
   try {
     const { userId } = req.params;
 
-    // 1. Find merchant
     const merchant = await User.findOne({ userId });
-    if (!merchant || merchant.role !== "merchant") {
-      return res.status(404).json({ message: "Merchant not found" });
+    if (!merchant) return res.status(404).json({ error: "Merchant not found" });
+
+    // Fetch wallet balance by userID ref
+    let walletBalance = 0;
+    const wallet = await Wallet.findOne({ userID: merchant._id });
+    if (wallet) {
+      walletBalance = wallet.balance || 0;
     }
 
-    // 2. Wallet by merchant._id
-    const wallet = await Wallet.findOne({ userID: merchant._id });
-    const walletBalance = wallet?.balance || 0;
+    const totalItems = merchant.items?.length || 0;
 
-    // 3. Items info
-    const items = merchant.items || [];
-    const totalItems = items.length;
-    const totalCost = items.reduce((sum, item) => sum + (item.costPrice || 0), 0);
-    const totalRevenue = items.reduce((sum, item) => sum + (item.sellingPrice || 0), 0);
-    const totalProfit = totalRevenue - totalCost;
+    // Calculate total items sold from transactions for this merchant
+    
+    const purchaseTransactions = await Transaction.find({ merchantId: merchant.userId, action: "purchase" });
 
-    // 4. Transactions where merchantId matches and action = "purchase"
-    const tx = await Transaction.find({
-      type: "purchase",
-      merchantId: merchant.userId
+    // Sum total quantity of all purchased items for this merchant
+    let totalItemsSold = 0;
+    purchaseTransactions.forEach(tx => {
+      if (Array.isArray(tx.items)) {
+        totalItemsSold += tx.items.length;  // count items purchased (assuming each item in array counts as 1 quantity)
+      }
     });
 
-    const totalItemsSold = tx.reduce((sum, t) => {
-      return sum + (Array.isArray(t.items) ? t.items.reduce((s, i) => s + (i.quantity || 1), 0) : 0);
-    }, 0);
+    // Calculate total revenue and total cost
+    let totalRevenue = 0;
+    let totalCost = 0;
+
+    for (const tx of purchaseTransactions) {
+      totalRevenue += tx.amount;
+
+      if (Array.isArray(tx.items)) {
+        tx.items.forEach(itemName => {
+          const found = merchant.items.find(i => i.name === itemName);
+          if (found) totalCost += found.costPrice || 0;
+        });
+      }
+    }
+
+    // Calculate total added and deducted amounts for this merchant userId
+    const allTransactions = await Transaction.find({ userId: merchant.userId });
+
+
+    let addedAmount = 0;
+    let deductedAmount = 0;
+
+    for (const tx of allTransactions) {
+      if (tx.action === "add") addedAmount += tx.amount;
+      if (tx.action === "deduct") deductedAmount += tx.amount;
+    }
+
+    const profit = totalRevenue - totalCost;
 
     res.json({
-        summary: {
-          walletBalance,
-          totalItems,
-          totalCost,
-          totalRevenue,
-          totalProfit,
-          totalItemsSold
-        }
-      });
-
+      walletBalance,
+      totalItems,
+      totalItemsSold,
+      totalRevenue,
+      totalCost,
+      totalProfit: profit,
+      addedAmount,
+      deductedAmount
+    });
   } catch (err) {
     console.error("❌ Error in merchant summary:", err.message);
-    res.status(500).json({ error: "Failed to load merchant summary" });
+    res.status(500).json({ error: "Server error" });
   }
 };
+
+module.exports = { getMerchantSummary };

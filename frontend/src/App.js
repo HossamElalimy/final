@@ -33,7 +33,9 @@ import ParentStudentPredictions from "./components/parent/ParentStudentPredictio
 import MerchantHome from "./components/merchant/MerchantHome";
 import MerchantLayout from "./components/merchant/MerchantLayout";
 import MerchantItems from "./components/merchant/MerchantItems";
+import MerchantTransactions from "./components/merchant/MerchantTransactions"; 
 
+import MerchantTransactionsPage from './components/merchant/MerchantTransactionsPage';
 
 
 function App() {
@@ -81,6 +83,8 @@ function App() {
 <Route path="/merchant" element={<MerchantLayout />}>
   <Route path="home" element={<MerchantHome />} />
   <Route path="items" element={<MerchantItems />} />
+  
+  <Route path="transactions" element={<MerchantTransactionsPage />} />
 
 </Route>
 

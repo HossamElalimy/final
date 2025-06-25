@@ -14,6 +14,7 @@ const {
 } = require("../controllers/teacherAttendanceController");
 
 const { getTeacherSummary } = require("../controllers/teacherSummaryController");
+const { getCurrentlyAttendingByTeacher } = require("../controllers/currentlyAttendingController");
 
 // Fetch lectures for a teacher on a specific date (defaults to today if no date query)
 // Allows optional course filter via query param
@@ -35,5 +36,7 @@ router.put("/attendance/:recordId", updateAttendanceRecord);
 router.delete("/attendance/:recordId", deleteAttendanceRecord);
 
 router.get("/summary/:teacherId", getTeacherSummary);
+
+router.get("/:teacherId/currently-attending", getCurrentlyAttendingByTeacher);
 
 module.exports = router;

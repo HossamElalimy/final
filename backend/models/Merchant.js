@@ -8,8 +8,8 @@ const MerchantSchema = new mongoose.Schema({
     {
       name: String,
       price: Number,
-      category: String,
-      imageUrl: String
+      category: String
+     
     }
   ]
 }, { timestamps: true });

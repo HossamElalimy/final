@@ -175,6 +175,167 @@ router.get("/user/:userId", async (req, res) => {
   }
 });
 
-  
-  
+router.post("/purchase", async (req, res) => {
+  const { studentUserId, merchantUserId, itemName, quantity } = req.body;
+
+  try {
+    const student = await User.findOne({ userId: studentUserId });
+    if (!student) return res.status(404).json({ error: "Student not found" });
+
+    const studentWallet = await Wallet.findOne({ userID: student._id });
+    if (!studentWallet) return res.status(400).json({ error: "Student wallet not found" });
+
+    const merchant = await User.findOne({ userId: merchantUserId, role: "merchant" });
+    if (!merchant) return res.status(404).json({ error: "Merchant not found" });
+
+    const item = merchant.items.find(i => i.name === itemName);
+    if (!item) return res.status(404).json({ error: "Item not found" });
+
+    if (item.quantity < quantity) {
+      return res.status(400).json({ error: "Insufficient item quantity" });
+    }
+
+    const totalPrice = item.sellingPrice * quantity;
+
+    if (studentWallet.balance < totalPrice) {
+      return res.status(400).json({ error: "Insufficient wallet balance" });
+    }
+
+    studentWallet.balance -= totalPrice;
+    await studentWallet.save();
+    const { v4: uuidv4 } = require('uuid'); // Import UUID for unique IDs
+    // Add the purchase transaction with all required merchant details:
+    const purchaseTx = new Transaction({
+      transactionId: uuidv4(),         // generate a unique transaction ID
+      userId: studentUserId,
+      walletID: studentWallet.walletID || studentWallet._id, // correct wallet id
+      amount: totalPrice,
+      action: "purchase",
+      items: Array(quantity).fill(item.name),
+      merchantId: merchant.userId,
+      merchantName: merchant.merchantName,
+      merchantType: merchant.merchantType,
+      balanceAfter: studentWallet.balance,  // updated balance after deduction
+      timestamp: new Date()
+    });
+    await purchaseTx.save();
+
+    const merchantWallet = await Wallet.findOne({ userID: merchant._id });
+    if (!merchantWallet) return res.status(400).json({ error: "Merchant wallet not found" });
+    merchantWallet.balance += totalPrice;
+    await merchantWallet.save();
+
+    item.quantity -= quantity;
+    merchant.markModified('items');
+    await merchant.save();
+
+    res.json({ message: "Purchase successful", studentBalance: studentWallet.balance, merchantBalance: merchantWallet.balance });
+  } catch (error) {
+    console.error("Purchase error:", error);
+    res.status(500).json({ error: "Server error during purchase" });
+  }
+});
+
+router.get("/merchant/:merchantUserId", async (req, res) => {
+  try {
+    const { merchantUserId } = req.params;
+
+    // Find transactions where merchantId matches merchantUserId
+    const transactions = await Transaction.find({
+      merchantId: merchantUserId,
+      action: "purchase"  // Only purchase actions
+    }).sort({ timestamp: -1 });
+
+    res.json(transactions);
+  } catch (error) {
+    console.error("Error fetching merchant transactions:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+// 1. Sales By Item (returns object: { itemName: quantitySold })
+router.get("/merchants/sales-by-item/:merchantId", async (req, res) => {
+  try {
+    const { merchantId } = req.params;
+
+    const purchases = await Transaction.find({ merchantId, action: "purchase" });
+
+    const salesByItem = {};
+    purchases.forEach(tx => {
+      if (Array.isArray(tx.items)) {
+        tx.items.forEach(item => {
+          salesByItem[item] = (salesByItem[item] || 0) + 1;
+        });
+      }
+    });
+
+    res.json(salesByItem);
+  } catch (error) {
+    console.error("Error in sales-by-item:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// 2. Revenue Breakdown By Item (returns object: { itemName: revenueAmount })
+router.get("/merchants/revenue-by-item/:merchantId", async (req, res) => {
+  try {
+    const { merchantId } = req.params;
+
+    const purchases = await Transaction.find({ merchantId, action: "purchase" });
+
+    const revenueByItem = {};
+    purchases.forEach(tx => {
+      if (Array.isArray(tx.items) && tx.items.length > 0) {
+        const pricePerItem = tx.amount / tx.items.length;
+        tx.items.forEach(item => {
+          revenueByItem[item] = (revenueByItem[item] || 0) + pricePerItem;
+        });
+      }
+    });
+
+    res.json(revenueByItem);
+  } catch (error) {
+    console.error("Error in revenue-by-item:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// 3. Sales Over Time (returns object: { "YYYY-MM-DD": quantitySold })
+router.get("/merchants/sales-over-time/:merchantId", async (req, res) => {
+  try {
+    const { merchantId } = req.params;
+
+    const purchases = await Transaction.find({ merchantId, action: "purchase" });
+
+    const salesOverTime = {};
+    purchases.forEach(tx => {
+      const dateKey = tx.timestamp.toISOString().slice(0, 10);
+      salesOverTime[dateKey] = (salesOverTime[dateKey] || 0) + (tx.items?.length || 0);
+    });
+
+    res.json(salesOverTime);
+  } catch (error) {
+    console.error("Error in sales-over-time:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// 4. Transaction Types Count (returns object: { add: count, deduct: count, purchase: count })
+router.get("/merchants/transaction-types/:merchantId", async (req, res) => {
+  try {
+    const { merchantId } = req.params;
+
+    const transactions = await Transaction.find({ merchantId });
+
+    const transactionTypes = {};
+    transactions.forEach(tx => {
+      transactionTypes[tx.action] = (transactionTypes[tx.action] || 0) + 1;
+    });
+
+    res.json(transactionTypes);
+  } catch (error) {
+    console.error("Error in transaction-types:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
 module.exports = router;

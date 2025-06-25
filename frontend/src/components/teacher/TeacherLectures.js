@@ -16,9 +16,16 @@ const TeacherLectures = () => {
   const [selectedLecture, setSelectedLecture] = useState(null);
   const [attendance, setAttendance] = useState([]);   // attendance records for the selected lecture
   const [status, setStatus] = useState("");           // status of selected lecture (Ongoing/Ended/Upcoming)
-
+  const [currentlyAttending, setCurrentlyAttending] = useState([]);
   const lastFetchTimeRef = useRef(0);  // to throttle lecture fetches
-
+  const fetchCurrentlyAttending = async () => {
+    try {
+      const res = await axios.get(`http://localhost:5000/api/teacher/${user.userId}/currently-attending`);
+      setCurrentlyAttending(res.data);
+    } catch (err) {
+      console.error("Error fetching currently attending:", err);
+    }
+  };
   // Fetch teacher's lectures, optionally filtered by date
   const fetchLectures = async () => {
     const now = Date.now();
@@ -56,6 +63,7 @@ const TeacherLectures = () => {
     if (!user?.userId) return;
     fetchLectures();
     fetchTeacherCourses();
+    fetchCurrentlyAttending();
   }, [user, filterDate, filterCourse]);  // refetch when date or course filter changes
 
   // Socket: listen for real-time attendance updates to refresh lecture list or records
@@ -97,11 +105,21 @@ const TeacherLectures = () => {
     const stat = getStatusBadge(lec);
     setSelectedLecture(lec);
     setStatus(stat);
+  
     try {
-      // Use lectureId if available (ended lectures), otherwise timingId
-      const lectureIdentifier = lec.lectureId ? lec.lectureId : lec.timingId;
-      const res = await axios.get(`http://localhost:5000/api/teacher/attendance/${lectureIdentifier}`);
-      setAttendance(res.data);
+      if (stat === "Ongoing") {
+        // Fetch from CurrentlyAttending collection
+        const res = await axios.get(`http://localhost:5000/api/teacher/${user.userId}/currently-attending?lectureId=${lec.lectureId || lec.timingId}`);
+        setAttendance(res.data);
+      } else if (stat === "Ended") {
+        // Fetch finalized attendance records
+        const lectureIdentifier = lec.lectureId ? lec.lectureId : lec.timingId;
+        const res = await axios.get(`http://localhost:5000/api/teacher/attendance/${lectureIdentifier}`);
+        setAttendance(res.data);
+      } else {
+        // For upcoming or other statuses, clear attendance or set empty
+        setAttendance([]);
+      }
     } catch (err) {
       console.error("Error fetching attendance records:", err);
     }
