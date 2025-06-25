@@ -1,51 +1,51 @@
-// backend/controllers/teacherLecturesController.js
 const Course = require("../models/Course");
 const Attendance = require("../models/Attendance");
+const CurrentlyAttending = require("../models/CurrentlyAttending");
 
 exports.getTeacherLecturesByDate = async (req, res) => {
   try {
     const { teacherId } = req.params;
-    const dateStr = req.query.date || new Date().toISOString().split("T")[0];  // default to today if no date provided
+    const dateStr = req.query.date || new Date().toISOString().split("T")[0];
     const targetDate = new Date(dateStr);
-    const weekdayName = targetDate.toLocaleDateString("en-US", { weekday: "long" });  // e.g., "Wednesday"
+    const weekdayName = targetDate.toLocaleDateString("en-US", { weekday: "long" });
 
-    // Find all courses where this teacher is assigned
     const courses = await Course.find({ teachers: { $in: [teacherId] } });
     const result = [];
 
     for (const course of courses) {
-      // For each timing in the course that matches the day of week of targetDate
       for (const timing of course.timings) {
         if (timing.day !== weekdayName) continue;
-        // Determine lecture status based on current time and target date
+
         const startDateTime = new Date(`${dateStr}T${timing.timeStart}`);
         const endDateTime = new Date(`${dateStr}T${timing.timeEnd}`);
         let status;
         const now = new Date();
         if (targetDate.toDateString() === now.toDateString()) {
-          // If looking at today, calculate status relative to current time
-          if (now < startDateTime) {
-            status = "Upcoming";
-          } else if (now > endDateTime) {
-            status = "Ended";
-          } else {
-            status = "Ongoing";
-          }
-        } else if (targetDate < now) {
-          // Date in the past
-          status = "Ended";
-        } else {
-          // Date in the future
-          status = "Upcoming";
-        }
-        // Count how many attendance records exist for this lecture (if any)
-        const attendanceCount = await Attendance.countDocuments({ 
+          if (now < startDateTime) status = "Upcoming";
+          else if (now > endDateTime) status = "Ended";
+          else status = "Ongoing";
+        } else if (targetDate < now) status = "Ended";
+        else status = "Upcoming";
+
+        const attendanceCount = await Attendance.countDocuments({
           courseCode: course.courseCode,
           date: dateStr,
           day: timing.day,
           startTime: timing.timeStart,
-          endTime: timing.timeEnd
+          endTime: timing.timeEnd,
         });
+
+        let countToUse;
+        if (status === "Ongoing") {
+          countToUse = await CurrentlyAttending.countDocuments({
+            courseCode: course.courseCode,
+            date: dateStr,
+            timingId: timing._id.toString(),
+          });
+        } else {
+          countToUse = attendanceCount;
+        }
+
         result.push({
           courseCode: course.courseCode,
           courseName: course.courseName,
@@ -54,23 +54,19 @@ exports.getTeacherLecturesByDate = async (req, res) => {
           endTime: timing.timeEnd,
           type: timing.type,
           room: timing.room || "N/A",
-          totalStudents: course.students.length,           // total students enrolled in course
-          attendedCount: status === "Ended" ? attendanceCount : attendanceCount,  
-          // ^ attendedCount: number of attendance records (if lecture ended or ongoing)
+          totalStudents: course.students.length,
+          attendedCount: countToUse,
           status,
-          // Use a lecture identifier:
-          timingId: timing._id,   // unique ID for this scheduled lecture timing
-          // If a Lecture document exists (for ended lectures), include its _id:
-          lectureId: undefined    // will be set below if Lecture record found
+          timingId: timing._id,
+          lectureId: undefined,
         });
-        // If a Lecture doc has been created for this past lecture, attach its ID
+
         if (status === "Ended" && attendanceCount > 0) {
-          // Find Lecture record for this instance if it exists (created when lecture ended)
           const lectureDoc = await require("../models/Lecture").findOne({
             courseCode: course.courseCode,
             startDateTime,
             endDateTime,
-            status: "ended"
+            status: "ended",
           });
           if (lectureDoc) {
             result[result.length - 1].lectureId = lectureDoc._id.toString();
@@ -79,7 +75,6 @@ exports.getTeacherLecturesByDate = async (req, res) => {
       }
     }
 
-    // Sort lectures by start time
     result.sort((a, b) => a.startTime.localeCompare(b.startTime));
     res.json(result);
   } catch (err) {
@@ -91,9 +86,8 @@ exports.getTeacherLecturesByDate = async (req, res) => {
 exports.getTeacherCourses = async (req, res) => {
   try {
     const { teacherId } = req.params;
-    // Return only course code and name for courses taught by this teacher
     const courses = await Course.find({ teachers: { $in: [teacherId] } })
-                                .select("courseCode courseName");
+      .select("courseCode courseName");
     res.json(courses);
   } catch (err) {
     console.error("Error fetching teacher courses:", err);
