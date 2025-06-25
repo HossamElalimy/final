@@ -75,6 +75,26 @@ router.get("/", async (req, res) => {
 });
 
 
+// 
+router.get("/search/teachers", async (req, res) => {
+  try {
+    const query = req.query.q || "";
+    if (!query.trim()) return res.json([]);  // return empty array if no query
+
+    const teachers = await User.find({
+      role: "teacher",
+      $or: [
+        { userId: { $regex: query, $options: "i" } },
+        { fullName: { $regex: query, $options: "i" } }
+      ]
+    }).select("userId fullName");
+
+    res.json(teachers);
+  } catch (err) {
+    console.error("❌ Teacher search error:", err.message);
+    res.status(500).json({ error: "Failed to search teachers" });
+  }
+});
 
 
 // Update a course (can update timings, teachers, students)
@@ -103,22 +123,26 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-// 📌 1. SEARCH TEACHERS - must come FIRST!
-router.get("/search/teachers", async (req, res) => {
+
+router.get("/suggest", async (req, res) => {
+  const query = req.query.query || "";
+
+  let regex;
   try {
-    const query = req.query.q?.toLowerCase() || "";
-    const teachers = await User.find({ role: "teacher" });
-
-    const filtered = teachers.filter((t) =>
-      (t.userId?.toLowerCase().includes(query) || t.fullName?.toLowerCase().includes(query))
-    );
-
-    res.json(filtered.map((t) => ({ userId: t.userId, fullName: t.fullName })));
+    // prevent malformed regex like "CS[301"
+    regex = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), "i");
   } catch (err) {
-    res.status(500).json({ error: "Error searching teachers", details: err.message });
+    return res.status(400).json({ error: "Invalid search pattern." });
+  }
+
+  try {
+    const courses = await Course.find({ courseCode: regex }).limit(5);
+    res.json(courses.map(c => c.courseCode));
+  } catch (err) {
+    console.error("❌ Course suggest failed:", err.message);
+    res.status(500).json({ error: "Internal server error." });
   }
 });
-
 // 📌 2. GET COURSE BY ID - must come AFTER
 router.get("/:id", async (req, res) => {
   try {
@@ -171,20 +195,8 @@ router.delete("/:id/students/:studentId", async (req, res) => {
 
   res.json({ message: "Student removed" });
 });
-router.get("/suggest", async (req, res) => {
-  try {
-    const query = req.query.query || "";
-    const regex = new RegExp(query, "i");
 
-    const courses = await Course.find({ courseCode: regex }).limit(5);
-    const suggestions = courses.map(c => c.courseCode);
-    
-    res.json(suggestions);
-  } catch (err) {
-    console.error("Course suggest failed:", err.message);
-    res.status(500).json({ error: "Failed to fetch suggestions" });
-  }
-});
+
 
 // GET all unique faculties for dropdown
 router.get("/faculties", async (req, res) => {
