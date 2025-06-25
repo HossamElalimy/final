@@ -113,14 +113,13 @@ const TeacherLectures = () => {
         const res = await axios.get(`http://localhost:5000/api/teacher/${user.userId}/currently-attending?lectureId=${lec.lectureId || lec.timingId}`);
         setAttendance(res.data);
       } else if (stat === "Ended") {
-        // Fetch finalized attendance records
-        const lectureIdentifier = lec.lectureId ? lec.lectureId : lec.timingId;
-        const res = await axios.get(`http://localhost:5000/api/teacher/attendance/${lectureIdentifier}`);
+        const res = await axios.get(`http://localhost:5000/api/teacher/attendance/${lec.lectureId}`);
         setAttendance(res.data);
       } else {
-        // For upcoming or other statuses, clear attendance or set empty
-        setAttendance([]);
+        const res = await axios.get(`http://localhost:5000/api/teacher/currently-attending/${lec.timingId}`);
+        setAttendance(res.data);
       }
+      
     } catch (err) {
       console.error("Error fetching attendance records:", err);
     }
