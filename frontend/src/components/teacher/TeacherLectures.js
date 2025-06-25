@@ -18,6 +18,7 @@ const TeacherLectures = () => {
   const [status, setStatus] = useState("");           // status of selected lecture (Ongoing/Ended/Upcoming)
   const [currentlyAttending, setCurrentlyAttending] = useState([]);
   const lastFetchTimeRef = useRef(0);  // to throttle lecture fetches
+  
   const fetchCurrentlyAttending = async () => {
     try {
       const res = await axios.get(`http://localhost:5000/api/teacher/${user.userId}/currently-attending`);

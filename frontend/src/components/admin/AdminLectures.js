@@ -121,17 +121,19 @@ const handleCourseSearchChange = (value) => {
 };
 
 const handleTeacherSearchChange = (value) => {
-  // If format is "Teacher Hossam (T01)" → extract "T01"
-  const match = value.match(/\((T\d+)\)/);
+  console.log("Searching teacher with:", value); // Add this for debugging
+  const match = value.match(/\((T\d+)\)/); // If format is "Teacher Hossam (T01)"
   const clean = match ? match[1] : value;
 
   setTeacherSearch(clean);
+
   if (clean.length >= 2) {
     fetchTeacherSuggestions(clean);
   } else {
     setTeacherSuggestions([]);
   }
 };
+
 
   
 
@@ -144,14 +146,16 @@ const handleTeacherSearchChange = (value) => {
 
   const fetchTeacherSuggestions = async (query) => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/suggest", {
-        params: { query }
+      const res = await axios.get("http://localhost:5000/api/courses/search/teachers", {
+        params: { q: query }
       });
-      setTeacherSuggestions(res.data);
+      setTeacherSuggestions(res.data); // Make sure this is updating correctly
     } catch (err) {
-      console.error("Teacher suggest error:", err); // 👈 Add this for debug
+      console.error("Teacher suggest error:", err);
+      setTeacherSuggestions([]); // Reset in case of failure
     }
   };
+  
   
 
   const handleSearchChange = (value) => {
@@ -340,10 +344,12 @@ const handleTeacherSearchChange = (value) => {
   list="teacher-suggestions"
 />
 <datalist id="teacher-suggestions">
-  {teacherSuggestions.map((s, i) => (
-    <option key={i} value={s} />
+  {teacherSuggestions.map((t, i) => (
+    <option key={i} value={`${t.fullName} (${t.userId})`} />
   ))}
 </datalist>
+
+
 
 
         <select

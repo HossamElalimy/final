@@ -10,22 +10,24 @@ const Attendance = require("../models/Attendance");
 router.get("/", async (req, res) => {
   try {
     const { date, course = "", teacher = "", faculty = "" } = req.query;
+    const todayDateStr = date || new Date().toISOString().split("T")[0];
+    const selectedDay = new Date(todayDateStr).toLocaleDateString("en-US", { weekday: "long" });
 
-    const todayDateStr = date || new Date().toISOString().split("T")[0]; // ✅ you forgot this!
-    const selectedDay = new Date(todayDateStr).toLocaleDateString("en-US", { weekday: "long" }); // ✅ and this!
-
-    const filterRegex = {
-      course: new RegExp(course, "i"),
-      teacher: new RegExp(teacher, "i")
-    };
+    let filterRegex = {};
+    try {
+      filterRegex.course = course ? new RegExp(course, "i") : null;
+      filterRegex.teacher = teacher ? new RegExp(teacher, "i") : null;
+    } catch (err) {
+      return res.status(400).json({ error: "❌ Invalid search pattern in course or teacher field." });
+    }
 
     const rawCourses = await Course.find({
       ...(faculty && { faculty }),
-      ...(course && { courseCode: filterRegex.course }),
+      ...(filterRegex.course && { courseCode: filterRegex.course }),
       ...(teacher && {
         $or: [
           { teacherName: filterRegex.teacher },
-          { teachers: { $elemMatch: { $regex: filterRegex.teacher } } }
+          { teachers: { $in: [teacher] } }
         ]
       })
     });
@@ -40,7 +42,7 @@ router.get("/", async (req, res) => {
           startTime: timing.timeStart,
           endTime: timing.timeEnd,
         });
-    
+
         flattenedLectures.push({
           courseCode: course.courseCode,
           courseName: course.courseName,
@@ -59,12 +61,11 @@ router.get("/", async (req, res) => {
         });
       }
     }
-    
 
     res.json(flattenedLectures);
   } catch (err) {
-    console.error("❌ Fetch lectures failed:", err.message);
-    res.status(500).json({ error: "Server error" });
+    console.error("❌ Fetch lectures failed:", err);
+    res.status(500).json({ error: "Server error", details: err.message });
   }
 });
 
