@@ -1,80 +1,98 @@
 // backend/controllers/teacherAttendanceController.js
 const Course = require("../models/Course");
-const User   = require("../models/User");
+const User = require("../models/User");
 const Lecture = require("../models/Lecture");
 const Attendance = require("../models/Attendance");
+const CurrentlyAttending = require("../models/CurrentlyAttending");
 
 // GET /api/teacher/attendance/:lectureId
-// Fetch existing attendance records for a lecture. If none exist (e.g., lecture ongoing and not yet taken), return students list.
 exports.getAttendanceRecords = async (req, res) => {
   try {
     const { lectureId } = req.params;
     let records = [];
 
-    // Try to interpret lectureId as a Lecture document ID first
     let lecture = null;
     if (lectureId.match(/^[0-9a-fA-F]{24}$/)) {
       lecture = await Lecture.findById(lectureId);
     }
+
     if (lecture) {
-      // Lecture doc exists (likely an ended lecture). Fetch all attendance records for that lecture instance.
+      // Ended lecture: use Attendance collection
       records = await Attendance.find({
         courseCode: lecture.courseCode,
-        date: lecture.startDateTime.toISOString().split("T")[0],  // date portion of lecture
+        date: lecture.startDateTime.toISOString().split("T")[0],
         startTime: lecture.startTime,
-        endTime: lecture.endTime
+        endTime: lecture.endTime,
       });
-      // Optionally populate student names from User model for convenience
-      // Assuming Attendance studentId corresponds to User.userId
+
       const studentIds = records.map(r => r.studentId);
       const users = await User.find({ userId: { $in: studentIds } });
+
       records = records.map(rec => {
         const user = users.find(u => u.userId === rec.studentId);
-        return { 
-          ...rec._doc, 
-          fullName: user ? user.name : "",  // attach full name if available
+        return {
+          ...rec._doc,
+          fullName: user ? (user.fullName || user.name || "Unknown") : "Unknown"
+
         };
       });
+
     } else {
-      // If not a Lecture ID, treat it as a timingId (for an ongoing or upcoming lecture)
-      // Find the course and timing by this subdocument ID
+      // Ongoing lecture: treat as timingId and fetch from Course
       const course = await Course.findOne({ "timings._id": lectureId });
-      if (!course) {
-        return res.status(404).json({ message: "Lecture not found" });
-      }
+      if (!course) return res.status(404).json({ message: "Lecture not found" });
+
       const timing = course.timings.id(lectureId);
       const todayStr = new Date().toISOString().split("T")[0];
-      // Fetch any existing records for today's occurrence of this lecture (if some attendance already taken)
+
       records = await Attendance.find({
         courseCode: course.courseCode,
         date: todayStr,
         day: timing.day,
         startTime: timing.timeStart,
-        endTime: timing.timeEnd
+        endTime: timing.timeEnd,
       });
+
       if (records.length === 0) {
-        // No records yet: initialize default entries for each student as absent (for teacher to update).
+        // No attendance yet — build default from student list
         const students = await User.find({ userId: { $in: course.students } });
-        records = students.map(student => ({
+        let tempRecords = students.map(student => ({
           studentId: student.userId,
-          fullName: student.name,
-          loginTime: "",   // no scan times since manually managed
+          fullName: student.fullName || student.name || "Unknown",
+          loginTime: "",
           logoutTime: "",
-          status: "Absent" // default each student as Absent initially
+          status: "Absent",
         }));
+
+        const sessions = await CurrentlyAttending.find({
+          courseCode: course.courseCode,
+          date: todayStr,
+          timingId: lectureId,
+        });
+
+        sessions.forEach(session => {
+          const rec = tempRecords.find(r => r.studentId === session.studentId);
+          if (rec) {
+            rec.loginTime = session.loginTime?.toISOString();
+            rec.logoutTime = session.logoutTime?.toISOString();
+            rec.status = "Attended";
+          }
+        });
+
+        records = tempRecords;
       } else {
-        // If some records exist (e.g., teacher already marked some students), include them and fetch names
         const studentIds = records.map(r => r.studentId);
         const users = await User.find({ userId: { $in: studentIds } });
         records = records.map(rec => {
           const user = users.find(u => u.userId === rec.studentId);
-          return { 
-            ...rec._doc, 
-            fullName: user ? user.name : "",
+          return {
+            ...rec._doc,
+             fullName: user ? (user.fullName || user.name || "Unknown") : "Unknown"
           };
         });
       }
     }
+
     res.json(records);
   } catch (err) {
     console.error("Failed to get attendance records:", err);
@@ -83,38 +101,36 @@ exports.getAttendanceRecords = async (req, res) => {
 };
 
 // POST /api/teacher/attendance
-// Add a new attendance record (e.g., for a student who just joined or manual addition).
 exports.addAttendanceRecord = async (req, res) => {
   try {
     const { lectureId, studentId, fullName, loginTime, logoutTime, status } = req.body;
-    // Determine lecture details from lectureId (could be Lecture._id for ended lectures or timingId for ongoing)
+
     let courseCode, courseName, day, timeStart, timeEnd, date;
     let lecture = null;
+
     if (lectureId && lectureId.match(/^[0-9a-fA-F]{24}$/)) {
       lecture = await Lecture.findById(lectureId);
     }
+
     if (lecture) {
-      // Use Lecture document details
       courseCode = lecture.courseCode;
       courseName = lecture.courseName;
-      day        = lecture.day;
-      timeStart  = lecture.startTime;
-      timeEnd    = lecture.endTime;
-      date       = lecture.startDateTime.toISOString().split("T")[0];
+      day = lecture.day;
+      timeStart = lecture.startTime;
+      timeEnd = lecture.endTime;
+      date = lecture.startDateTime.toISOString().split("T")[0];
     } else {
-      // Use timingId to get course and timing details (assuming lectureId is actually timingId in this case)
       const course = await Course.findOne({ "timings._id": lectureId });
       if (!course) return res.status(400).json({ error: "Invalid lecture identifier" });
       const timing = course.timings.id(lectureId);
       courseCode = course.courseCode;
       courseName = course.courseName;
-      day        = timing.day;
-      timeStart  = timing.timeStart;
-      timeEnd    = timing.timeEnd;
-      // Use current date for ongoing lecture (since teacher is adding attendance presumably on the day of lecture)
-      date       = new Date().toISOString().split("T")[0];
+      day = timing.day;
+      timeStart = timing.timeStart;
+      timeEnd = timing.timeEnd;
+      date = new Date().toISOString().split("T")[0];
     }
-    // Create and save the new attendance record
+
     const record = new Attendance({
       studentId,
       courseCode,
@@ -125,12 +141,12 @@ exports.addAttendanceRecord = async (req, res) => {
       endTime: timeEnd,
       status,
       loginTime: loginTime ? new Date(`${date}T${loginTime}`) : undefined,
-      logoutTime: logoutTime ? new Date(`${date}T${logoutTime}`) : undefined
+      logoutTime: logoutTime ? new Date(`${date}T${logoutTime}`) : undefined,
     });
+
     await record.save();
-    // Return the created record (including a generated ID) to the frontend
+
     const saved = record.toObject();
-    // Attach fullName for convenience (not stored in Attendance, but we have it from request or can fetch)
     saved.fullName = fullName || "";
     res.status(201).json(saved);
   } catch (err) {
@@ -140,31 +156,34 @@ exports.addAttendanceRecord = async (req, res) => {
 };
 
 // PUT /api/teacher/attendance/:recordId
-// Update an existing attendance record (e.g., change status or times for a student).
 exports.updateAttendanceRecord = async (req, res) => {
   try {
     const { recordId } = req.params;
-    const updateData = req.body;  // { studentId, status, loginTime, logoutTime, ... }
-    // If loginTime/logoutTime are provided as strings, convert to Date
+    const updateData = req.body;
+
     if (updateData.loginTime) {
-      // Assuming loginTime in request is in "HH:MM" format for the same date as originally recorded
       const rec = await Attendance.findById(recordId);
-      if (rec) {
-        const dateStr = rec.date; 
-        updateData.loginTime = new Date(`${dateStr}T${updateData.loginTime}`);
-      }
+      if (rec) updateData.loginTime = new Date(`${rec.date}T${updateData.loginTime}`);
     }
     if (updateData.logoutTime) {
       const rec = await Attendance.findById(recordId);
-      if (rec) {
-        const dateStr = rec.date;
-        updateData.logoutTime = new Date(`${dateStr}T${updateData.logoutTime}`);
-      }
+      if (rec) updateData.logoutTime = new Date(`${rec.date}T${updateData.logoutTime}`);
     }
-    const updated = await Attendance.findByIdAndUpdate(recordId, updateData, { new: true });
-    if (!updated) {
-      return res.status(404).json({ error: "Attendance record not found" });
-    }
+
+    let updated = await Attendance.findByIdAndUpdate(recordId, updateData, { new: true });
+
+if (updated) {
+  // Try to clean up from CurrentlyAttending if exists
+  await CurrentlyAttending.findOneAndDelete({
+    studentId: updated.studentId,
+    courseCode: updated.courseCode,
+    timingId: req.body.timingId || updated.timingId,
+    date: updated.date
+  });
+}
+
+    if (!updated) return res.status(404).json({ error: "Attendance record not found" });
+
     res.json({ message: "Attendance record updated." });
   } catch (err) {
     console.error("Failed to update attendance:", err);
@@ -173,7 +192,6 @@ exports.updateAttendanceRecord = async (req, res) => {
 };
 
 // DELETE /api/teacher/attendance/:recordId
-// Delete an attendance record (e.g., remove a mistakenly added student record).
 exports.deleteAttendanceRecord = async (req, res) => {
   try {
     const { recordId } = req.params;

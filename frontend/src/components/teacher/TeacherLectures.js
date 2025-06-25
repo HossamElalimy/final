@@ -141,7 +141,8 @@ const TeacherLectures = () => {
         // Only send fields that might change
         status: record.status,
         loginTime: record.loginTime,    // times are strings like "HH:mm" or Date strings
-        logoutTime: record.logoutTime
+        logoutTime: record.logoutTime,
+        timingId: selectedLecture?.timingId 
       });
       // Immediately reflect changes in UI (or refetch records)
       if (selectedLecture) openLectureModal(selectedLecture);
@@ -288,7 +289,7 @@ const TeacherLectures = () => {
                   <thead>
                     <tr>
                       <th>Student ID</th>
-                      <th>Full Name</th>
+                   
                       <th>Login Time</th>
                       <th>Logout Time</th>
                       <th>Status</th>
@@ -300,15 +301,7 @@ const TeacherLectures = () => {
                       <tr key={record._id || index}>
                         <td>{record.studentId}</td>
                         {/* Teacher can edit the full name or ID if needed (not usually necessary if pre-filled) */}
-                        <td>
-                          <input 
-                            type="text"
-                            className="form-control" 
-                            value={record.fullName} 
-                            onChange={(e) => handleAttendanceChange(index, "fullName", e.target.value)}
-                            disabled={status !== "Ongoing"}
-                          />
-                        </td>
+                   
                         <td>
                           <input 
                             type="time"
@@ -328,31 +321,37 @@ const TeacherLectures = () => {
                           />
                         </td>
                         <td>
-                          <select 
-                            className="form-select" 
-                            value={record.status} 
-                            onChange={(e) => handleAttendanceChange(index, "status", e.target.value)}
-                            disabled={status !== "Ongoing"}
-                          >
-                            <option value="Attended">Attended</option>
-                            <option value="Late">Late</option>
-                            <option value="Absent">Absent</option>
-                          </select>
+                        <select
+  className="form-select"
+  style={{ minWidth: "130px" }}
+  value={record.status || "Attended"}
+  onChange={(e) => handleAttendanceChange(index, "status", e.target.value)}
+  disabled={status !== "Ongoing"}
+>
+  <option value="Attended">Attended</option>
+  <option value="Late">Late</option>
+  <option value="Absent">Absent</option>
+</select>
+
+
                         </td>
                         {status === "Ongoing" && (
-                          <td>
-                            {/* Save and Delete buttons for each record (enabled only during Ongoing lectures) */}
-                            {record._id ? (
-                              <button className="btn btn-success btn-sm me-2" onClick={() => saveAttendance(record)}>
-                                Save
-                              </button>
-                            ) : null}
-                            {record._id ? (
-                              <button className="btn btn-danger btn-sm" onClick={() => deleteAttendance(record._id)}>
-                                Delete
-                              </button>
-                            ) : null}
-                          </td>
+                      <td>
+                      <div className="d-flex align-items-center gap-2">
+                        {record._id && (
+                          <>
+                            <button className="btn btn-success btn-sm" onClick={() => saveAttendance(record)}>
+                              Save
+                            </button>
+                            <button className="btn btn-danger btn-sm" onClick={() => deleteAttendance(record._id)}>
+                              Delete
+                            </button>
+                          </>
+                        )}
+                      </div>
+                    </td>
+                    
+                        
                         )}
                       </tr>
                     ))}
